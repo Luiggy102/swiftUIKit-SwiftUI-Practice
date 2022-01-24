@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84803552279EE3FE0060909D /* retomandoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84803551279EE3FE0060909D /* retomandoApp.swift */; };
+		84803554279EE3FE0060909D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84803553279EE3FE0060909D /* ContentView.swift */; };
+		84803556279EE3FF0060909D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84803555279EE3FF0060909D /* Assets.xcassets */; };
+		84803559279EE3FF0060909D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84803558279EE3FF0060909D /* Preview Assets.xcassets */; };
+		84803563279EE3FF0060909D /* retomandoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84803562279EE3FF0060909D /* retomandoTests.swift */; };
+		8480356D279EE3FF0060909D /* retomandoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480356C279EE3FF0060909D /* retomandoUITests.swift */; };
+		8480356F279EE3FF0060909D /* retomandoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480356E279EE3FF0060909D /* retomandoUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8480355F279EE3FF0060909D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84803546279EE3FE0060909D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8480354D279EE3FE0060909D;
+			remoteInfo = retomando;
+		};
+		84803569279EE3FF0060909D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84803546279EE3FE0060909D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8480354D279EE3FE0060909D;
+			remoteInfo = retomando;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8480354E279EE3FE0060909D /* retomando.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = retomando.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84803551279EE3FE0060909D /* retomandoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = retomandoApp.swift; sourceTree = "<group>"; };
+		84803553279EE3FE0060909D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		84803555279EE3FF0060909D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84803558279EE3FF0060909D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8480355E279EE3FF0060909D /* retomandoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = retomandoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84803562279EE3FF0060909D /* retomandoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = retomandoTests.swift; sourceTree = "<group>"; };
+		84803568279EE3FF0060909D /* retomandoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = retomandoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8480356C279EE3FF0060909D /* retomandoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = retomandoUITests.swift; sourceTree = "<group>"; };
+		8480356E279EE3FF0060909D /* retomandoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = retomandoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8480354B279EE3FE0060909D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8480355B279EE3FF0060909D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84803565279EE3FF0060909D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84803545279EE3FE0060909D = {
+			isa = PBXGroup;
+			children = (
+				84803550279EE3FE0060909D /* retomando */,
+				84803561279EE3FF0060909D /* retomandoTests */,
+				8480356B279EE3FF0060909D /* retomandoUITests */,
+				8480354F279EE3FE0060909D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8480354F279EE3FE0060909D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8480354E279EE3FE0060909D /* retomando.app */,
+				8480355E279EE3FF0060909D /* retomandoTests.xctest */,
+				84803568279EE3FF0060909D /* retomandoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84803550279EE3FE0060909D /* retomando */ = {
+			isa = PBXGroup;
+			children = (
+				84803551279EE3FE0060909D /* retomandoApp.swift */,
+				84803553279EE3FE0060909D /* ContentView.swift */,
+				84803555279EE3FF0060909D /* Assets.xcassets */,
+				84803557279EE3FF0060909D /* Preview Content */,
+			);
+			path = retomando;
+			sourceTree = "<group>";
+		};
+		84803557279EE3FF0060909D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				84803558279EE3FF0060909D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		84803561279EE3FF0060909D /* retomandoTests */ = {
+			isa = PBXGroup;
+			children = (
+				84803562279EE3FF0060909D /* retomandoTests.swift */,
+			);
+			path = retomandoTests;
+			sourceTree = "<group>";
+		};
+		8480356B279EE3FF0060909D /* retomandoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8480356C279EE3FF0060909D /* retomandoUITests.swift */,
+				8480356E279EE3FF0060909D /* retomandoUITestsLaunchTests.swift */,
+			);
+			path = retomandoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8480354D279EE3FE0060909D /* retomando */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84803572279EE3FF0060909D /* Build configuration list for PBXNativeTarget "retomando" */;
+			buildPhases = (
+				8480354A279EE3FE0060909D /* Sources */,
+				8480354B279EE3FE0060909D /* Frameworks */,
+				8480354C279EE3FE0060909D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = retomando;
+			productName = retomando;
+			productReference = 8480354E279EE3FE0060909D /* retomando.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8480355D279EE3FF0060909D /* retomandoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84803575279EE3FF0060909D /* Build configuration list for PBXNativeTarget "retomandoTests" */;
+			buildPhases = (
+				8480355A279EE3FF0060909D /* Sources */,
+				8480355B279EE3FF0060909D /* Frameworks */,
+				8480355C279EE3FF0060909D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84803560279EE3FF0060909D /* PBXTargetDependency */,
+			);
+			name = retomandoTests;
+			productName = retomandoTests;
+			productReference = 8480355E279EE3FF0060909D /* retomandoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84803567279EE3FF0060909D /* retomandoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84803578279EE3FF0060909D /* Build configuration list for PBXNativeTarget "retomandoUITests" */;
+			buildPhases = (
+				84803564279EE3FF0060909D /* Sources */,
+				84803565279EE3FF0060909D /* Frameworks */,
+				84803566279EE3FF0060909D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8480356A279EE3FF0060909D /* PBXTargetDependency */,
+			);
+			name = retomandoUITests;
+			productName = retomandoUITests;
+			productReference = 84803568279EE3FF0060909D /* retomandoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84803546279EE3FE0060909D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					8480354D279EE3FE0060909D = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					8480355D279EE3FF0060909D = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 8480354D279EE3FE0060909D;
+					};
+					84803567279EE3FF0060909D = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 8480354D279EE3FE0060909D;
+					};
+				};
+			};
+			buildConfigurationList = 84803549279EE3FE0060909D /* Build configuration list for PBXProject "retomando" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84803545279EE3FE0060909D;
+			productRefGroup = 8480354F279EE3FE0060909D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8480354D279EE3FE0060909D /* retomando */,
+				8480355D279EE3FF0060909D /* retomandoTests */,
+				84803567279EE3FF0060909D /* retomandoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8480354C279EE3FE0060909D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84803559279EE3FF0060909D /* Preview Assets.xcassets in Resources */,
+				84803556279EE3FF0060909D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8480355C279EE3FF0060909D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84803566279EE3FF0060909D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8480354A279EE3FE0060909D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84803554279EE3FE0060909D /* ContentView.swift in Sources */,
+				84803552279EE3FE0060909D /* retomandoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8480355A279EE3FF0060909D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84803563279EE3FF0060909D /* retomandoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84803564279EE3FF0060909D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8480356F279EE3FF0060909D /* retomandoUITestsLaunchTests.swift in Sources */,
+				8480356D279EE3FF0060909D /* retomandoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84803560279EE3FF0060909D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8480354D279EE3FE0060909D /* retomando */;
+			targetProxy = 8480355F279EE3FF0060909D /* PBXContainerItemProxy */;
+		};
+		8480356A279EE3FF0060909D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8480354D279EE3FE0060909D /* retomando */;
+			targetProxy = 84803569279EE3FF0060909D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		84803570279EE3FF0060909D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84803571279EE3FF0060909D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84803573279EE3FF0060909D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"retomando/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = retomando.retomando;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84803574279EE3FF0060909D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"retomando/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = retomando.retomando;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84803576279EE3FF0060909D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = retomando.retomandoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/retomando.app/retomando";
+			};
+			name = Debug;
+		};
+		84803577279EE3FF0060909D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = retomando.retomandoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/retomando.app/retomando";
+			};
+			name = Release;
+		};
+		84803579279EE3FF0060909D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = retomando.retomandoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = retomando;
+			};
+			name = Debug;
+		};
+		8480357A279EE3FF0060909D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = retomando.retomandoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = retomando;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84803549279EE3FE0060909D /* Build configuration list for PBXProject "retomando" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84803570279EE3FF0060909D /* Debug */,
+				84803571279EE3FF0060909D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84803572279EE3FF0060909D /* Build configuration list for PBXNativeTarget "retomando" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84803573279EE3FF0060909D /* Debug */,
+				84803574279EE3FF0060909D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84803575279EE3FF0060909D /* Build configuration list for PBXNativeTarget "retomandoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84803576279EE3FF0060909D /* Debug */,
+				84803577279EE3FF0060909D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84803578279EE3FF0060909D /* Build configuration list for PBXNativeTarget "retomandoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84803579279EE3FF0060909D /* Debug */,
+				8480357A279EE3FF0060909D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84803546279EE3FE0060909D /* Project object */;
+}
