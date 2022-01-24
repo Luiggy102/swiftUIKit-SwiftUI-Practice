@@ -14,6 +14,7 @@
 		84803563279EE3FF0060909D /* retomandoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84803562279EE3FF0060909D /* retomandoTests.swift */; };
 		8480356D279EE3FF0060909D /* retomandoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480356C279EE3FF0060909D /* retomandoUITests.swift */; };
 		8480356F279EE3FF0060909D /* retomandoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480356E279EE3FF0060909D /* retomandoUITestsLaunchTests.swift */; };
+		8480357C279EE9400060909D /* player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480357B279EE9400060909D /* player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		84803568279EE3FF0060909D /* retomandoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = retomandoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8480356C279EE3FF0060909D /* retomandoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = retomandoUITests.swift; sourceTree = "<group>"; };
 		8480356E279EE3FF0060909D /* retomandoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = retomandoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8480357B279EE9400060909D /* player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				84803551279EE3FE0060909D /* retomandoApp.swift */,
 				84803553279EE3FE0060909D /* ContentView.swift */,
+				8480357B279EE9400060909D /* player.swift */,
 				84803555279EE3FF0060909D /* Assets.xcassets */,
 				84803557279EE3FF0060909D /* Preview Content */,
 			);
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84803554279EE3FE0060909D /* ContentView.swift in Sources */,
+				8480357C279EE9400060909D /* player.swift in Sources */,
 				84803552279EE3FE0060909D /* retomandoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
