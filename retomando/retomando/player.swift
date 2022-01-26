@@ -45,9 +45,10 @@ struct player: View {
     }
 }
 
+
 struct player_Previews: PreviewProvider {
     static var previews: some View {
         player()
-            .preferredColorScheme(.light)
+            .preferredColorScheme(.dark)
     }
 }
