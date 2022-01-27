@@ -40,3 +40,101 @@ func saludosAMuchasPersonas(_ personas: String... ) -> String{
 
 saludosAMuchasPersonas("Persona0","Pesona1", "Persona2","Persona3")
 
+let titulo4 = "parametros inout ---"
+
+ print(titulo4)
+
+var x = 2
+func sumaUno(n numero: inout Int){
+    numero += 1
+}
+x //antes de la func es 2
+sumaUno(n: &x)
+x //despues de la func es 3
+
+
+var nEjm = 10, nEjem2 = 2
+func intercambiarDosNums(n1 numero1: inout Int, n2 numero2 : inout Int){
+    let n1 = numero1
+    numero1 = numero2
+    numero2 = n1
+}
+
+intercambiarDosNums(n1: &nEjm, n2: &nEjem2)
+nEjm
+nEjem2
+
+//
+
+var titulo5 = "funciones como tipo de dato (function Types) ---"
+
+var valor = 10
+
+
+func escogerMovimiento(atras : Bool) -> (Int) -> Int{
+    
+    func moverAdelante(_ n : Int)-> Int{
+        return n + 1
+    }// (Int)-> Int
+    
+    func moverAtras(_ n: Int) -> Int{
+        return n - 1
+    }// (Int)-> Int
+    
+    return atras ? moverAtras : moverAdelante
+}
+
+let moverCercaACero = escogerMovimiento(atras: valor > 0)
+
+while valor != 0{
+    print(valor,"...")
+    valor = moverCercaACero(valor)
+}
+print("cero!")
+
+
+
+
+var titulo6 = "Funciones anidadas (Nested Functions) ---"
+
+//func escogerMovimiento(atras : Bool) -> (Int) -> Int{
+//
+//    func moverAdelante(_ n : Int)-> Int{
+//        return n + 1
+//    }// (Int)-> Int
+//
+//    func moverAtras(_ n: Int) -> Int{
+//        return n - 1
+//    }// (Int)-> Int
+//
+//    return atras ? moverAtras : moverAdelante
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
