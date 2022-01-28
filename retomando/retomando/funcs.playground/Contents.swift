@@ -1,4 +1,5 @@
 import Cocoa
+import Darwin
 
 var greeting = "Funciones 😼"
 
@@ -111,22 +112,58 @@ var titulo6 = "Funciones anidadas (Nested Functions) ---"
 //}
 
 
+var titulo7 = "Clorues ---"
+print(titulo7)
+
+//Clousures sin parametros
+
+let diHola = {
+    print("Hola!")
+}
+diHola()
+
+let saludaA = {
+    (nombre : String) -> String in
+    "Hola \(nombre)"
+}
+saludaA("Luis")
+saludaA("Ya ves")
 
 
+/*
+ { (params) -> return type in
+    //Código del closure
+ }
+ */
 
+let nombres = ["Christian", "Ricardo", "Juan Gabriel", "Edgar", "Freddy"]
 
+func reversa(s1: String, s2:String) -> Bool{
+    return s1 > s2
+}
 
+reversa(s1: "Carlos", s2: "Luis")
 
+var nombresEnOrden = nombres.sorted()
+var nombesEnReversa = nombres.sorted(by:reversa )
 
+nombesEnReversa = nombres.sorted(by: { st1, st2 in
+    return st1 > st2
+})
+nombesEnReversa = nombres.sorted(by:{ $0 > $1})
 
+nombesEnReversa = nombres.sorted(by: < )
 
+var ponAEdgarPrimero = nombres.sorted(by:{(nombre1: String, nombre2 : String) -> Bool in
+    if nombre1 == "Edgar"{
+        return true
+    }else if nombre2 == "Edgar"{
+        return false
+    }
+    return nombre1 < nombre2
+})
 
-
-
-
-
-
-
+print(ponAEdgarPrimero)
 
 
 
