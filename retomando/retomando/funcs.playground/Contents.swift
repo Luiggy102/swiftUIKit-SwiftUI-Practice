@@ -166,12 +166,14 @@ var ponAEdgarPrimero = nombres.sorted(by:{(nombre1: String, nombre2 : String) ->
 print(ponAEdgarPrimero)
 
 
+let saludoConClousures = {
+    (nombre: String) -> String in
+    return "Hola \(nombre)"
+}
 
+saludoConClousures("Alex")
 
-
-
-
-
+print("es es un saludo = \(saludoConClousures("yo cuando")) ")
 
 
 
