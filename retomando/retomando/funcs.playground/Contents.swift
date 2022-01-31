@@ -175,5 +175,36 @@ saludoConClousures("Alex")
 
 print("es es un saludo = \(saludoConClousures("yo cuando")) ")
 
+//Imprimir filtro de números
+
+let arrayDeNumeros = [-3,-2,-1,0,1,2,3]
 
 
+func númerosMenoresQueValor(Valor: Int,arrayDeNumeros Numeros: [Int]) -> [Int]{
+    var numerosFiltradosMenores = [Int]()
+    for num in Numeros{
+        if num < Valor{
+            numerosFiltradosMenores.append(num)
+        }
+        print(num)
+    }
+    
+    
+    return numerosFiltradosMenores
+}
+
+númerosMenoresQueValor(Valor: 0, arrayDeNumeros: arrayDeNumeros)
+
+
+
+let titulo8 = "Trailling closures ---" // es una sintaxis para los closures
+
+print(titulo8)
+
+func funcionQueTomaUnClosure(closure: ()-> Void){
+    // cuerpo de la función
+}
+
+funcionQueTomaUnClosure {
+    // cuerpo del closure
+}
