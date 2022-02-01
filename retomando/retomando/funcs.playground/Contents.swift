@@ -208,3 +208,48 @@ func funcionQueTomaUnClosure(closure: ()-> Void){
 funcionQueTomaUnClosure {
     // cuerpo del closure
 }
+
+
+//Transformar los números a letras con Closures
+// Se necesita .map para transfomar
+// .map necesita un closure para funcionar
+
+let nombresDeDigitos : [Int:String]
+
+nombresDeDigitos = [
+    0:"Cero",
+    1:"Uno",
+    2:"Dos",
+    3:"Tres",
+    4:"Cuatro",
+    5:"Cinco",
+    6:"Seis",
+    7:"Siete",
+    8:"Ocho",
+    9:"Nueve"
+]
+
+let digitos : [Int]
+digitos = [2,323,443,4312,22]
+
+print(nombresDeDigitos[9]!)
+//Map devuelve un array
+//                                     //en *numeros* le colocamos el array de números para que devuelve un string
+let stringDeLosNumeros = digitos.map { (numero) -> String in
+    var numero = numero
+    var salida = ""
+    repeat{
+        salida = nombresDeDigitos[numero%10]! + salida
+        numero /= 10
+    }while numero > 0
+    return salida
+}
+
+1%10
+2%10
+
+var xdd = 100
+xdd % 10
+xdd /= 10
+
+
