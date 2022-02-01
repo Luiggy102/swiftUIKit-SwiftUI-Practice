@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84803552279EE3FE0060909D /* retomandoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84803551279EE3FE0060909D /* retomandoApp.swift */; };
+		84803552279EE3FE0060909D /* RetomandoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84803551279EE3FE0060909D /* RetomandoApp.swift */; };
 		84803554279EE3FE0060909D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84803553279EE3FE0060909D /* ContentView.swift */; };
 		84803556279EE3FF0060909D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84803555279EE3FF0060909D /* Assets.xcassets */; };
 		84803559279EE3FF0060909D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84803558279EE3FF0060909D /* Preview Assets.xcassets */; };
-		84803563279EE3FF0060909D /* retomandoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84803562279EE3FF0060909D /* retomandoTests.swift */; };
-		8480356D279EE3FF0060909D /* retomandoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480356C279EE3FF0060909D /* retomandoUITests.swift */; };
-		8480356F279EE3FF0060909D /* retomandoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480356E279EE3FF0060909D /* retomandoUITestsLaunchTests.swift */; };
-		8480357C279EE9400060909D /* player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480357B279EE9400060909D /* player.swift */; };
+		84803563279EE3FF0060909D /* RetomandoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84803562279EE3FF0060909D /* RetomandoTests.swift */; };
+		8480356D279EE3FF0060909D /* RetomandoUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480356C279EE3FF0060909D /* RetomandoUITest.swift */; };
+		8480356F279EE3FF0060909D /* RetomandoUITestsLaunchTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480356E279EE3FF0060909D /* RetomandoUITestsLaunchTest.swift */; };
+		8480357C279EE9400060909D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480357B279EE9400060909D /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,16 +36,17 @@
 
 /* Begin PBXFileReference section */
 		8480354E279EE3FE0060909D /* retomando.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = retomando.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		84803551279EE3FE0060909D /* retomandoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = retomandoApp.swift; sourceTree = "<group>"; };
+		84803551279EE3FE0060909D /* RetomandoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetomandoApp.swift; sourceTree = "<group>"; };
 		84803553279EE3FE0060909D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		84803555279EE3FF0060909D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84803558279EE3FF0060909D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8480355E279EE3FF0060909D /* retomandoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = retomandoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		84803562279EE3FF0060909D /* retomandoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = retomandoTests.swift; sourceTree = "<group>"; };
+		84803562279EE3FF0060909D /* RetomandoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetomandoTests.swift; sourceTree = "<group>"; };
 		84803568279EE3FF0060909D /* retomandoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = retomandoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8480356C279EE3FF0060909D /* retomandoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = retomandoUITests.swift; sourceTree = "<group>"; };
-		8480356E279EE3FF0060909D /* retomandoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = retomandoUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		8480357B279EE9400060909D /* player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = player.swift; sourceTree = "<group>"; };
+		8480356C279EE3FF0060909D /* RetomandoUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetomandoUITest.swift; sourceTree = "<group>"; };
+		8480356E279EE3FF0060909D /* RetomandoUITestsLaunchTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetomandoUITestsLaunchTest.swift; sourceTree = "<group>"; };
+		8480357B279EE9400060909D /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		84DD5E0927A9EB1B0064C370 /* funcss.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = funcss.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,11 +97,12 @@
 		84803550279EE3FE0060909D /* retomando */ = {
 			isa = PBXGroup;
 			children = (
-				84803551279EE3FE0060909D /* retomandoApp.swift */,
+				84803551279EE3FE0060909D /* RetomandoApp.swift */,
 				84803553279EE3FE0060909D /* ContentView.swift */,
-				8480357B279EE9400060909D /* player.swift */,
+				8480357B279EE9400060909D /* Player.swift */,
 				84803555279EE3FF0060909D /* Assets.xcassets */,
 				84803557279EE3FF0060909D /* Preview Content */,
+				84DD5E0927A9EB1B0064C370 /* funcss.playground */,
 			);
 			path = retomando;
 			sourceTree = "<group>";
@@ -116,7 +118,7 @@
 		84803561279EE3FF0060909D /* retomandoTests */ = {
 			isa = PBXGroup;
 			children = (
-				84803562279EE3FF0060909D /* retomandoTests.swift */,
+				84803562279EE3FF0060909D /* RetomandoTests.swift */,
 			);
 			path = retomandoTests;
 			sourceTree = "<group>";
@@ -124,8 +126,8 @@
 		8480356B279EE3FF0060909D /* retomandoUITests */ = {
 			isa = PBXGroup;
 			children = (
-				8480356C279EE3FF0060909D /* retomandoUITests.swift */,
-				8480356E279EE3FF0060909D /* retomandoUITestsLaunchTests.swift */,
+				8480356C279EE3FF0060909D /* RetomandoUITest.swift */,
+				8480356E279EE3FF0060909D /* RetomandoUITestsLaunchTest.swift */,
 			);
 			path = retomandoUITests;
 			sourceTree = "<group>";
@@ -140,6 +142,7 @@
 				8480354A279EE3FE0060909D /* Sources */,
 				8480354B279EE3FE0060909D /* Frameworks */,
 				8480354C279EE3FE0060909D /* Resources */,
+				84DD5E0A27A9EBAA0064C370 /* Run SwiftLint Script */,
 			);
 			buildRules = (
 			);
@@ -255,14 +258,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		84DD5E0A27A9EBAA0064C370 /* Run SwiftLint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8480354A279EE3FE0060909D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				84803554279EE3FE0060909D /* ContentView.swift in Sources */,
-				8480357C279EE9400060909D /* player.swift in Sources */,
-				84803552279EE3FE0060909D /* retomandoApp.swift in Sources */,
+				8480357C279EE9400060909D /* Player.swift in Sources */,
+				84803552279EE3FE0060909D /* RetomandoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84803563279EE3FF0060909D /* retomandoTests.swift in Sources */,
+				84803563279EE3FF0060909D /* RetomandoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,8 +302,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8480356F279EE3FF0060909D /* retomandoUITestsLaunchTests.swift in Sources */,
-				8480356D279EE3FF0060909D /* retomandoUITests.swift in Sources */,
+				8480356F279EE3FF0060909D /* RetomandoUITestsLaunchTest.swift in Sources */,
+				8480356D279EE3FF0060909D /* RetomandoUITest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +447,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"retomando/Preview Content\"";
+				DEVELOPMENT_TEAM = TX3WAVR9MU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -451,6 +476,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"retomando/Preview Content\"";
+				DEVELOPMENT_TEAM = TX3WAVR9MU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

@@ -8,17 +8,14 @@
 import SwiftUI
 import AVKit
 
-struct player: View {
-    @State var isPlayerActive : Bool = false
+struct Player: View {
+    @State var isPlayerActive: Bool = false
     var body: some View {
         NavigationView {
-            VStack{
-                
+            VStack {
                 Text("Video de Cuphead")
                     .font(.title)
                     .fontWeight(.semibold)
-                    
-                    
                 Button {
                     isPlayerActive = true
                 } label: {
@@ -31,7 +28,11 @@ struct player: View {
                     }
                 }
                 NavigationLink(isActive: $isPlayerActive) {
-                    VideoPlayer(player: AVPlayer(url: URL(string: "https://cdn.cloudflare.steamstatic.com/steam/apps/256705156/movie480.mp4")!))
+                    VideoPlayer(player:
+                                    AVPlayer(url: URL(
+                                        string:
+                                            "https://cdn.cloudflare.steamstatic.com/steam/apps/256705156/movie480.mp4"
+                                    )!))
                         .frame(width: 300, height: 260, alignment: .center)
                 } label: {
                     EmptyView()
@@ -45,10 +46,9 @@ struct player: View {
     }
 }
 
-
-struct player_Previews: PreviewProvider {
+struct PlayerPreview: PreviewProvider {
     static var previews: some View {
-        player()
+        Player()
             .preferredColorScheme(.dark)
     }
 }

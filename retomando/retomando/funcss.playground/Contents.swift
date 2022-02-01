@@ -1,4 +1,5 @@
-import Cocoa
+import SwiftUI
+// import Cocoa
 import Darwin
 
 var greeting = "Funciones 😼"
@@ -45,12 +46,12 @@ let titulo4 = "parametros inout ---"
 
  print(titulo4)
 
-var varibleX = 2
+var variableX = 2
 func sumaUno(n numero: inout Int){
     numero += 1
 }
 x //antes de la func es 2
-sumaUno(n: &varibleX )
+sumaUno(n: &variableX)
 x //despues de la func es 3
 
 
@@ -75,7 +76,7 @@ var valor = 10
 func escogerMovimiento(atras : Bool) -> (Int) -> Int{
     
     func moverAdelante(_ numero Int)-> Int{
-        return  numero + 1
+        return numero 1
     }// (Int)-> Int
     
     func moverAtras(_ numero Int) -> Int{
@@ -121,7 +122,7 @@ let diHola = {
 }
 diHola()
 
-let saludaA = {(nombre: String) -> String in
+let saludaA = { (nombre: String) -> String in
     "Hola \(nombre)"
 }
 saludaA("Luis")
@@ -136,7 +137,7 @@ saludaA("Ya ves")
 let nombres = ["Christian", "Ricardo", "Juan Gabriel", "Edgar", "Freddy"]
 
 func reversa(ss1: String, ss2: String) -> Bool {
-    return ss1 > ss2
+    return s1 > s2
 }
 
 reversa(ss1: "Carlos", ss2: "Luis")
@@ -154,7 +155,7 @@ nombesEnReversa = nombres.sorted(by: < )
 var ponAEdgarPrimero = nombres.sorted(by: {(nombre1: String, nombre2: String) -> Bool in
     if nombre1 == "Edgar"{
         return true
-    } else if nombre2 == "Edgar" {
+    } else if nombre2 == "Edgar"{
         return false
     }
     return nombre1 < nombre2
@@ -162,7 +163,7 @@ var ponAEdgarPrimero = nombres.sorted(by: {(nombre1: String, nombre2: String) ->
 
 print(ponAEdgarPrimero)
 
-let saludoConClousures = {(nombre: String) -> String in
+let saludoConClousures = { (nombre: String) -> String in
     return "Hola \(nombre)"
 }
 
@@ -174,7 +175,7 @@ print("es es un saludo = \(saludoConClousures("yo cuando")) ")
 
 let arrayDeNumeros = [-3, -2, -1, 0, 1, 2, 3]
 
-func númerosMenoresQueValor( valor: Int, arrayDeNumeros numeros: [Int]) -> [Int] {
+func númerosMenoresQueValor(valor: Int, arrayDeNumeros numeros: [Int]) -> [Int] {
     var numerosFiltradosMenores = [Int]()
     for num in numeros {
         if num < valor {
