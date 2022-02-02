@@ -6,11 +6,9 @@ var greeting = "Funciones 😼"
 
 let titulo = "Etiquetas de parametros"
 
-
 print(titulo, "---")
 
-func saluda(_ persona: String,desde lugarDeOrigen :String)-> String{
-    
+func saluda(_ persona: String, desde lugarDeOrigen: String) -> String {
     return "Hola \(persona), un placer que nos visites desde \(lugarDeOrigen)"
 }
 
@@ -19,9 +17,9 @@ print(saluda("Luiggy", desde: "Estados Unidos"))
 saluda("Funcion", desde: "XCode")
 
 let titulo2 = "Valores por defecto"
-print(titulo2,  "---")
+print(titulo2, "---")
 
-func sumaDosNumero(n1 numero1: Int = 1, n2 numero2: Int = 1) -> Int{
+func sumaDosNumero(n1 numero1: Int = 1, n2 numero2: Int = 1) -> Int {
     return numero1 * numero2
 }
 
@@ -33,36 +31,35 @@ print(titulo3)
 
 "..."
 
-func saludosAMuchasPersonas(_ personas: String... ) -> String{
-    for persona in personas{
+func saludosAMuchasPersonas(_ personas: String... ) -> String {
+    for persona in personas {
         print("Hola \(persona)")
     }
     return "saludaste a \(personas.count) personas"
 }
 
-saludosAMuchasPersonas("Persona0","Pesona1", "Persona2","Persona3")
+saludosAMuchasPersonas("Persona0", "Pesona1", "Persona2", "Persona3")
 
 let titulo4 = "parametros inout ---"
 
  print(titulo4)
 
 var variableX = 2
-func sumaUno(n numero: inout Int){
+func sumaUno(n numero: inout Int) {
     numero += 1
 }
-x //antes de la func es 2
+// antes de la func es 2
 sumaUno(n: &variableX)
-x //despues de la func es 3
-
+// despues de la func es 3
 
 var nEjm = 10, nEjem2 = 2
-func intercambiarDosNums(n1 numero1: inout Int, n2 numero2 : inout Int){
-    let n1 = numero1
+func intercambiarDosNums(nn1 numero1: inout Int, nn2 numero2: inout Int) {
+    let nn1 = numero1
     numero1 = numero2
-    numero2 = n1
+    numero2 = nn1
 }
 
-intercambiarDosNums(n1: &nEjm, n2: &nEjem2)
+intercambiarDosNums(nn1: &nEjm, nn2: &nEjem2)
 nEjm
 nEjem2
 
@@ -72,34 +69,27 @@ var titulo5 = "funciones como tipo de dato (function Types) ---"
 
 var valor = 10
 
-
-func escogerMovimiento(atras : Bool) -> (Int) -> Int{
-    
-    func moverAdelante(_ numero Int)-> Int{
-        return numero 1
+func escogerMovimiento(atras: Bool) -> (Int) -> Int {
+    func moverAdelante(_ numero: Int) -> Int {
+        return numero +  1
     }// (Int)-> Int
-    
-    func moverAtras(_ numero Int) -> Int{
-        return numero 1
+    func moverAtras(_ numero: Int) -> Int {
+        return numero - 1
     }// (Int)-> Int
-    
     return atras ? moverAtras : moverAdelante
 }
 
 let moverCercaACero = escogerMovimiento(atras: valor > 0)
 
-while valor != 0{
-    print(valor,"...")
+while valor != 0 {
+    print(valor, "...")
     valor = moverCercaACero(valor)
 }
 print("cero!")
 
-
-
-
 var titulo6 = "Funciones anidadas (Nested Functions) ---"
 
-//func escogerMovimiento(atras : Bool) -> (Int) -> Int{
+// func escogerMovimiento(atras : Bool) -> (Int) -> Int{
 //
 //    func moverAdelante(_ n : Int)-> Int{
 //        return n + 1
@@ -137,7 +127,7 @@ saludaA("Ya ves")
 let nombres = ["Christian", "Ricardo", "Juan Gabriel", "Edgar", "Freddy"]
 
 func reversa(ss1: String, ss2: String) -> Bool {
-    return s1 > s2
+    return ss1 > ss2
 }
 
 reversa(ss1: "Carlos", ss2: "Luis")
@@ -186,7 +176,7 @@ func númerosMenoresQueValor(valor: Int, arrayDeNumeros numeros: [Int]) -> [Int]
     return numerosFiltradosMenores
 }
 
-númerosMenoresQueValor(Valor: 0, arrayDeNumeros: arrayDeNumeros)
+númerosMenoresQueValor(valor: 9, arrayDeNumeros: arrayDeNumeros)
 
 let titulo8 = "Trailling closures ---" // es una sintaxis para los closures
 
@@ -241,3 +231,5 @@ let stringDeLosNumeros = digitos.map { (numero) -> String in
 var xdd = 100
 xdd % 10
 xdd /= 10
+
+
