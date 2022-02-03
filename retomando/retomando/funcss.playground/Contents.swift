@@ -228,7 +228,7 @@ let stringDeLosNumeros = digitos.map { (numero) -> String in
 1%10
 2%10
 
-let titulo10 = {
+let titulo10 = { () -> Void in
     print("Capturing closures ---")
 }
 titulo10()
@@ -268,8 +268,50 @@ func decrementadorDeNúmerosNegativos(cantidad: Int) -> () -> Int {
 }
 
 let decrementarEnMenosDiez = decrementadorDeNúmerosNegativos(cantidad: -10)
-decrementarEnMenosDiez()
-decrementarEnMenosDiez()
-decrementarEnMenosDiez()
+print(decrementarEnMenosDiez())
+print(decrementarEnMenosDiez())
+print(decrementarEnMenosDiez())
 
+let titulo11 = { () -> Void in
+    print("@escaping closures ---")
+}
 
+titulo11()
+
+var manejadorDeCompletaciones: [() -> Void] = []
+
+func funcionConUnEscapingClosure(manejadorDeCompletacion: @escaping () -> Void) {
+    // Con eso se agrega todos los closures que sean `() -> Void`
+    manejadorDeCompletaciones.append(manejadorDeCompletacion)
+}
+
+manejadorDeCompletaciones.count
+manejadorDeCompletaciones.append(titulo11)
+manejadorDeCompletaciones.append(titulo10)
+manejadorDeCompletaciones.first?()
+manejadorDeCompletaciones[1]()
+manejadorDeCompletaciones.count
+manejadorDeCompletaciones.first?()
+
+func funcionSinEscapingClosure(closure: () -> Void) {
+    closure()
+}
+
+class Pruebitap {
+    var variableY = 1
+    func hazAlgo() {
+        funcionConUnEscapingClosure {
+            self.variableY = 100
+        }
+        funcionSinEscapingClosure {
+            variableY = 200
+        }
+    }
+}
+
+let instaciaDePruebitap = Pruebitap()
+instaciaDePruebitap.variableY
+instaciaDePruebitap.hazAlgo()
+instaciaDePruebitap.variableY
+
+manejadorDeCompletaciones.count
