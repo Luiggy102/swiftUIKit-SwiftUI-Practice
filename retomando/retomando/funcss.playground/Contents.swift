@@ -228,8 +228,48 @@ let stringDeLosNumeros = digitos.map { (numero) -> String in
 1%10
 2%10
 
-var xdd = 100
-xdd % 10
-xdd /= 10
+let titulo10 = {
+    print("Capturing closures ---")
+}
+titulo10()
+
+// Hacer incrementador por si mismo
+
+func hacerIncrementador(cantidadAIncrementar: Int) -> () -> Int {
+    var contadorTotal = 0
+    func incrementador() -> Int {
+        contadorTotal += cantidadAIncrementar
+        return contadorTotal
+    }
+    return incrementador
+}
+
+let aumentarEnDiez = hacerIncrementador(cantidadAIncrementar: 10)
+/* Cuando se llama asi nomas, devuelte el tipo de closure */
+
+aumentarEnDiez()// Para hacer que funcione se pone los parentesis
+aumentarEnDiez()// Como el numero 10  se queda en la constante, va a aumentar por 10
+aumentarEnDiez()// 30
+
+let aumentarEnOcho = hacerIncrementador(cantidadAIncrementar: 8)
+aumentarEnOcho()// CADA VARIABLE QUE DEVUELVA UN CLOSURE TIENE SUS VARIABLES LOCALES
+// POR ESO FUNCIONA
+aumentarEnOcho()
+
+// Decrementador de números negativos
+
+func decrementadorDeNúmerosNegativos(cantidad: Int) -> () -> Int {
+   var contador = 0
+    func decrementador() -> Int {
+        contador += cantidad
+        return contador
+    }
+    return decrementador
+}
+
+let decrementarEnMenosDiez = decrementadorDeNúmerosNegativos(cantidad: -10)
+decrementarEnMenosDiez()
+decrementarEnMenosDiez()
+decrementarEnMenosDiez()
 
 
