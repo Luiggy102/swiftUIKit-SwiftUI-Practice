@@ -315,3 +315,42 @@ instaciaDePruebitap.hazAlgo()
 instaciaDePruebitap.variableY
 
 manejadorDeCompletaciones.count
+
+enum LeccionesQueSiguen {
+    case enumerationsClaseVaga, enumerationsCodigosDeBarras, enumerationsConRawValues
+}
+
+let titulo12 = LeccionesQueSiguen.enumerationsClaseVaga
+type(of: titulo12)
+print(titulo12, "---")
+
+enum GenerosMusicales: CaseIterable {
+    case rock, bachata, funk, salsa, jazz, latin, house
+}
+
+let numeroDeGenerosMusicales = GenerosMusicales.allCases.count
+print("Los generos musicales actuales son:", numeroDeGenerosMusicales)
+
+for generosMusicales in GenerosMusicales.allCases {
+    print("*", generosMusicales)
+}
+
+let titulo13 = LeccionesQueSiguen.enumerationsCodigosDeBarras
+print(titulo13, "---")
+
+enum CódigoDeBarra {
+    case códigoUpc(Int, Int, Int, Int)
+    case códigoQr(String)
+}
+
+var códigoDeProducto: CódigoDeBarra = .códigoUpc(2, 28329, 13129, 9)
+// códigoDeProducto = .códigoQr("qwertyuiop")
+
+print(códigoDeProducto)
+
+switch códigoDeProducto {
+    case let .códigoQr(código):
+        print("El código QR del producto es \(código)")
+    case let .códigoUpc(numeroDelSistema, manufactor, producto, chequeo):
+        print("El Código Upc es \(numeroDelSistema),\(manufactor),\(producto),\(chequeo)")
+}
