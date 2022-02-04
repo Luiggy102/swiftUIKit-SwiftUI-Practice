@@ -324,15 +324,15 @@ let titulo12 = LeccionesQueSiguen.enumerationsClaseVaga
 type(of: titulo12)
 print(titulo12, "---")
 
-enum GenerosMusicales: CaseIterable {
-    case rock, bachata, funk, salsa, jazz, latin, house
+enum GenerosMusicales: Int, CaseIterable {
+    case rock = 1, bachata, funk, salsa, jazz, latin, house
 }
 
 let numeroDeGenerosMusicales = GenerosMusicales.allCases.count
 print("Los generos musicales actuales son:", numeroDeGenerosMusicales)
 
 for generosMusicales in GenerosMusicales.allCases {
-    print("*", generosMusicales)
+    print("\(generosMusicales.rawValue).-", generosMusicales)
 }
 
 let titulo13 = LeccionesQueSiguen.enumerationsCodigosDeBarras
@@ -349,8 +349,51 @@ var códigoDeProducto: CódigoDeBarra = .códigoUpc(2, 28329, 13129, 9)
 print(códigoDeProducto)
 
 switch códigoDeProducto {
-    case let .códigoQr(código):
+case let .códigoQr(código):
         print("El código QR del producto es \(código)")
-    case let .códigoUpc(numeroDelSistema, manufactor, producto, chequeo):
+case let .códigoUpc(numeroDelSistema, manufactor, producto, chequeo):
         print("El Código Upc es \(numeroDelSistema),\(manufactor),\(producto),\(chequeo)")
 }
+
+let titulo14 = LeccionesQueSiguen.enumerationsConRawValues
+print(titulo14, "---")
+
+enum Planet: Int {
+    case mercury = 1, venus, earth, mars, jupiter, saturn, uranus, neptune
+}
+
+enum ASCIIControlCharacter: Character {
+    case tab = "\t"
+    case lineFeed = "\n"
+    case carriageReturn = "\r"
+}
+
+let earthOrder = Planet.earth.rawValue
+
+let possiblePlanet = Planet(rawValue: 5)
+
+let planetPosition = 3
+if let anyPlanet = Planet(rawValue: planetPosition) {
+    switch anyPlanet {
+    case .earth:
+            print("La tierra es segura")
+    default:
+            print("No es seguro ir a este planeta")
+    }
+} else {
+    print("El planeta indicado no existe... ")
+}
+
+ASCIIControlCharacter.tab
+
+enum DiasSemana: String {
+   case lunes
+   case martes
+   case miercoles
+   case jueves
+   case viernes
+   case sabado
+   case domingo
+}
+
+let hoy = DiasSemana.jueves.rawValue // caso de enums hecho string
