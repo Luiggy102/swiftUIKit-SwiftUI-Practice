@@ -2,6 +2,7 @@ import UIKit
 import CoreGraphics
 
 let laQueSeViene = "Programación Orientada a Objetos 😼"
+print(laQueSeViene)
 
 enum Modulos: String, CaseIterable {
     case modulo1 = "\n--- Modulo 1: Estructuras y Clases ---"
@@ -11,9 +12,8 @@ enum Modulos: String, CaseIterable {
     case modulo5 = "\n--- Modulo 5: Encadenamiento opcional ---"
     case modulo6 = "\n--- Modulo 6: Conclusión opcional ---"
 }
-
 enum Clases: String, CaseIterable {
-    case clase1 = "* Estructuras y Clases (1)" // 1
+    case clase1 = "* Estructuras vs Clases (1)" // 1
     case clase2 = "* Estructuras: Datos Copiados Por Valor (2)"
     case clase3 = "* Clases: Datos Referenciados (3)"
     case clase4 = "* Stored Properties (4)" // 2
@@ -60,59 +60,87 @@ func imprimeTodasLasClases() {
     }
 }
 
+var moduloActual: UInt8 = 1
+var tituloActual: UInt8 = 1
 var modulo = { (modulo: UInt8) -> Void in
     switch modulo {
     case 1:
         print(Modulos.modulo1.rawValue)
         for clase in Clases.allCases {
             print(clase.rawValue)
-            if clase.rawValue == Clases.clase4.rawValue{
+            if clase.rawValue == Clases.clase3.rawValue{
                 break
             }
         }
-    case 2: // Hacer imprimer desde la clase 2 hasta la 10
+    case 2: // Hacer imprimer desde la clase 4 hasta la 10
         print(Modulos.modulo2.rawValue)
+        var contador = 1
         for clase in Clases.allCases {
-            if clase != Clases.clase4 {
+            if contador > 3 && contador < 11 {
                 print(clase.rawValue)
-                continue
+            } else if contador == 11{
+                break
             }
+            contador += 1
         }
     case 3:
         print(Modulos.modulo3.rawValue)
+        var contador = 1
         for clase in Clases.allCases {
-            print(clase.rawValue)
-            if clase.rawValue == Clases.clase17.rawValue{
+            if contador > 10 && contador < 17 {
+                print(clase.rawValue)
+            } else if contador == 17{
                 break
             }
+            contador += 1
         }
     case 4:
         print(Modulos.modulo4.rawValue)
+        var contador = 1
         for clase in Clases.allCases {
-            print(clase.rawValue)
-            if clase.rawValue == Clases.clase22.rawValue{
+            if contador > 16 && contador < 23 {
+                print(clase.rawValue)
+            } else if contador == 23 {
                 break
             }
+            contador += 1
         }
     case 5:
         print(Modulos.modulo5.rawValue)
+        var contador = 1
         for clase in Clases.allCases {
-            print(clase.rawValue)
-            if clase.rawValue == Clases.clase26.rawValue{
+            if contador > 22 && contador < 26 {
+                print(clase.rawValue)
+            } else if contador == 26 {
                 break
             }
+            contador += 1
         }
     case 6:
         print(Modulos.modulo6.rawValue)
         for clase in Clases.allCases {
-            print(clase.rawValue)
-            if clase.rawValue == Clases.clase4.rawValue{
-                break
+            if clase == Clases.clase26 {
+                print(clase.rawValue)
             }
         }
-    default: imprimeTodasLasClases()
+    default: print("Eliga Modulo del 1 al 6")
+    }
+}
+var titulo = { (titulo: UInt8) in
+    var contador = 1
+    for clase in Clases.allCases {
+        if contador == titulo {
+                print("""
+            \n  El Titulo Actual es:
+                \(clase.rawValue) \n
+            """)
+        } else if contador > titulo {
+            break
+        }
+        contador += 1
     }
 }
 
-modulo(2)
+modulo(3)
+titulo(0)
 
