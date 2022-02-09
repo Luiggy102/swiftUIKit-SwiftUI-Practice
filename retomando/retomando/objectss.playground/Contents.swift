@@ -45,7 +45,7 @@ func imprimeTodasLasClases() {
     print(laQueSeViene)
     print(Modulos.modulo1.rawValue)
     for clase in Clases.allCases {
-        print(" ",clase.rawValue)
+        print(" ", clase.rawValue)
         if clase.rawValue == Clases.clase3.rawValue {
             print(Modulos.modulo2.rawValue)
         } else if clase.rawValue == Clases.clase9.rawValue {
@@ -68,7 +68,7 @@ var modulo = { (modulo: UInt8) -> Void in
         print(Modulos.modulo1.rawValue)
         for clase in Clases.allCases {
             print(clase.rawValue)
-            if clase.rawValue == Clases.clase3.rawValue{
+            if clase.rawValue == Clases.clase3.rawValue {
                 break
             }
         }
@@ -78,7 +78,7 @@ var modulo = { (modulo: UInt8) -> Void in
         for clase in Clases.allCases {
             if contador > 3 && contador < 11 {
                 print(clase.rawValue)
-            } else if contador == 11{
+            } else if contador == 11 {
                 break
             }
             contador += 1
@@ -89,7 +89,7 @@ var modulo = { (modulo: UInt8) -> Void in
         for clase in Clases.allCases {
             if contador > 10 && contador < 17 {
                 print(clase.rawValue)
-            } else if contador == 17{
+            } else if contador == 17 {
                 break
             }
             contador += 1
@@ -121,6 +121,8 @@ var modulo = { (modulo: UInt8) -> Void in
         for clase in Clases.allCases {
             if clase == Clases.clase26 {
                 print(clase.rawValue)
+            } else {
+                continue
             }
         }
     default: print("Eliga Modulo del 1 al 6")
@@ -141,6 +143,5 @@ var titulo = { (titulo: UInt8) in
     }
 }
 
-modulo(3)
-titulo(0)
-
+modulo(moduloActual)
+titulo(tituloActual)
