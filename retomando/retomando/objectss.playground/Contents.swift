@@ -1,7 +1,7 @@
 import UIKit
 import CoreGraphics
 
-let laQueSeViene = "Programación Orientada a Objetos 😼"
+let laQueSeViene = "Programación Orientada a Objetos"
 print(laQueSeViene)
 
 enum Modulos: String, CaseIterable {
@@ -62,6 +62,7 @@ func imprimeTodasLasClases() {
 
 var moduloActual: UInt8 = 1
 var tituloActual: UInt8 = 1
+let separador = "========================================================================================================================"
 var modulo = { (modulo: UInt8) -> Void in
     switch modulo {
     case 1:
@@ -133,8 +134,10 @@ var titulo = { (titulo: UInt8) in
     for clase in Clases.allCases {
         if contador == titulo {
                 print("""
+            \(separador)
             \n  El Titulo Actual es:
                 \(clase.rawValue) \n
+            - Ejercicios/Ejemplos:
             """)
         } else if contador > titulo {
             break
@@ -145,3 +148,49 @@ var titulo = { (titulo: UInt8) in
 
 modulo(moduloActual)
 titulo(tituloActual)
+
+// Se suelen usar como contenedores de datos que no hagan muchas cosas
+
+// Ej de estructura de resolución de video
+
+struct Resolución {
+    var width = 0
+    var height = 0
+}
+
+// Class para contenedores de datos que hacen más cosas
+
+// Ej: Clase del modo de video
+
+class ModoDeVideo {
+    var resolución = Resolución()
+    var enlazado = false
+    var frameRate = 0.0
+    var nombre: String? // Optional por que no se sabe si tendrá un string como nombre
+}
+
+let instanciaDeResolución = Resolución()
+let instanciaDeModoDeVideo = ModoDeVideo()
+
+// Struct
+// instanciaDeResolución.width = 1920 // Error: las instacias de un objeto como constante no pueden cambiar
+
+// Class
+instanciaDeModoDeVideo.frameRate = 30.0
+instanciaDeModoDeVideo.nombre = "Clase de programación"
+instanciaDeModoDeVideo.resolución.width = 1920
+instanciaDeModoDeVideo.resolución.height = 1080
+instanciaDeModoDeVideo.enlazado = false
+
+print("El titulo es \"\(instanciaDeModoDeVideo.nombre!)\" la resolución es \(instanciaDeModoDeVideo.resolución) y tiene \(instanciaDeModoDeVideo.frameRate) frames")
+
+tituloActual = 2
+titulo(tituloActual)
+
+let hd = Resolución(width: 1920, height: 1080) // otro espacio de memoria a partir de resolución, copia de datos
+print("hd =", hd)
+
+var cinema = hd
+print("Cinema =", cinema)
+cinema.width = 2018
+print("Cinema =", cinema)
