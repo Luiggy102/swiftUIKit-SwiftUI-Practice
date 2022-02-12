@@ -194,3 +194,30 @@ var cinema = hd
 print("Cinema =", cinema)
 cinema.width = 2018
 print("Cinema =", cinema)
+
+tituloActual = 3
+titulo(tituloActual)
+
+let diezOchenta = ModoDeVideo()
+
+diezOchenta.nombre = "Ejemplo de clase"
+diezOchenta.frameRate = 25.0
+diezOchenta.resolución = hd
+diezOchenta.enlazado = false
+
+print("Diez Ochenta")
+print(diezOchenta.nombre!, diezOchenta.enlazado, diezOchenta.resolución, diezOchenta.frameRate)
+
+print("Tambein Diez ochenta")
+let tambienDiezOchenta = diezOchenta
+print(tambienDiezOchenta.nombre!, tambienDiezOchenta.enlazado, tambienDiezOchenta.resolución, tambienDiezOchenta.frameRate)
+
+// Cambios a la clase
+tambienDiezOchenta.nombre = "cambios de clase\n"
+tambienDiezOchenta.frameRate = 30.0
+
+diezOchenta // Ambos cambiaron, el padre
+tambienDiezOchenta // Ambos cambiaron , el hijo
+
+var huboCambios = diezOchenta === tambienDiezOchenta ? false : true // para comparar ===
+var noHuboCambios = diezOchenta !== tambienDiezOchenta ? false : true // para negar !==
