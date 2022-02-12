@@ -137,7 +137,7 @@ var titulo = { (titulo: UInt8) in
             \(separador)
             \n  El Titulo Actual es:
                 \(clase.rawValue) \n
-            - Ejercicios/Ejemplos:
+            - Ejercicios/Ejemplos: \n
             """)
         } else if contador > titulo {
             break
@@ -221,3 +221,48 @@ tambienDiezOchenta // Ambos cambiaron , el hijo
 
 var huboCambios = diezOchenta === tambienDiezOchenta ? false : true // para comparar ===
 var noHuboCambios = diezOchenta !== tambienDiezOchenta ? false : true // para negar !==
+
+moduloActual = 2
+modulo(moduloActual)
+tituloActual = 4
+titulo(tituloActual)
+
+print("Propiedades almacenadas")
+
+struct LongitudDeRangoFijo {
+    var primerValor: Int // Stored properties
+    let rango: Int // Stored properties
+}
+
+var rangoDeTresItems = LongitudDeRangoFijo(primerValor: 0, rango: 3)
+print(rangoDeTresItems)
+
+rangoDeTresItems.primerValor = 1
+print(rangoDeTresItems)
+
+tituloActual = 5
+titulo(tituloActual)
+
+class ImportadorDeDatos {
+    var nombreDeArchivo = "Archivo.txt"
+}
+
+class ManagerDeDatos {
+    lazy var importador = ImportadorDeDatos()
+    var datos = [String]()
+}
+
+let manager = ManagerDeDatos() // Instancia de ManagerDeDatos
+manager
+manager.datos.append("info")
+manager.datos.append("más info")
+manager // la variable `lazy` no a sido creada, pero esta el espacio en memoria
+
+print(manager.datos)
+// Hasta esta línea, el importer no ha sido creado...
+manager.importador.nombreDeArchivo // Cuando llama la variable `lazy` ya crea eso
+// Aquí, la variable importer ya ha sido creada
+print(manager.importador.nombreDeArchivo)
+manager
+
+print(manager.importador.nombreDeArchivo, manager.datos)
