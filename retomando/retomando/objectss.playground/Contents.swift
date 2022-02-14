@@ -341,3 +341,16 @@ cuadrado.centro = Puntos(puntoX: 18, puntoY: 3)
 print(cuadrado.centro)
 
 titulo(tituloActual + 1)
+
+struct Cuboide {
+    var alto = 0.0, ancho = 0.0, profundidad = 0.0
+    var volumen: Double {
+        return alto * ancho * profundidad // Computed Properties de sólo lectura
+    }
+}
+
+let cuboide = Cuboide(alto: 2, ancho: 4, profundidad: 5)
+cuboide.volumen // listo
+// cuboide.volumen = 20 // Error, solo lectura
+
+
