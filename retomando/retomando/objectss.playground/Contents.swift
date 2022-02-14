@@ -270,32 +270,74 @@ print(manager.importador.nombreDeArchivo, manager.datos)
 tituloActual = 6
 titulo(tituloActual)
 
-// REPASAR CLASE
+class Usuario{
+    let nombre: String = "JoeDoe"
+    var edad: UInt8 = 18
+    let altura: Float = 1.70
+    
+    var puedeIniciarSesion: Bool { // Computed propertie
+        return edad >= 18
+    }
+}
 
-//struct Point {
-//    var x = 0.0, y = 0.0
-//}
-//
-//struct Size {
-//    var width = 0.0, height = 0.0
-//}
-//
-//struct Rect {
-//    var origin = Point()
-//    var size = Size()
-//    var center: Point {
-//        get {
-//            Point(x: origin.x + size.width/2, y: origin.y + size.height/2)
-//        }
-//        set {
-//            origin.x = newValue.x - size.width/2
-//            origin.y = newValue.y - size.height/2
-//        }
-//    }
-//}
-//
-//var square = Rect(origin: Point(x: 0, y: 0), size: Size(width: 10, height: 10))
-//square.center
-//print(square.center)
-//let initialSquareCenter = square.center
-//square.center = Point(x: 18, y: 3)
+let joe = Usuario()
+joe
+print(joe.puedeIniciarSesion)
+joe.edad = 17
+joe.puedeIniciarSesion ? "verda es" : "nada"
+
+joe
+
+let juan = joe
+juan.edad = 19
+joe.puedeIniciarSesion ? "verda es" : "nada"
+juan
+joe
+
+juan === joe // Entre copias , se referencia la mima posición de memoria
+
+// si cambio juan, cambio a joe y viciversa
+
+
+
+
+
+
+joe.edad = 16
+juan
+juan.edad = 20
+joe
+
+struct Tamaño {
+    var ancho = 0.0, alto = 0.0
+}
+struct Puntos {
+    var puntoX = 0.0, puntoY = 0.0
+}
+
+
+struct Rectangulo {
+    var origen = Puntos()
+    var tamaño = Tamaño()
+    var centro: Puntos {
+        get {
+            let centroX = origen.puntoX + tamaño.ancho/2
+            let centroY = origen.puntoY + tamaño.alto/2
+            return Puntos(puntoX: centroX, puntoY: centroY)
+        }
+        set(nuevoCentro) {
+            origen.puntoX = nuevoCentro.puntoX - tamaño.ancho
+            origen.puntoY = nuevoCentro.puntoY - tamaño.alto
+        }
+    }
+}
+
+var cuadrado = Rectangulo(origen: Puntos(puntoX: 0, puntoY: 0), tamaño: Tamaño(ancho: 10, alto: 10))
+cuadrado.centro
+let antiguoCentro = cuadrado.centro
+print(antiguoCentro)
+
+cuadrado.centro = Puntos(puntoX: 18, puntoY: 3)
+print(cuadrado.centro)
+
+titulo(tituloActual + 1)
