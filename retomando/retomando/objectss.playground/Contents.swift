@@ -341,6 +341,7 @@ cuadrado.centro = Puntos(puntoX: 18, puntoY: 3)
 print(cuadrado.centro)
 
 titulo(tituloActual + 1)
+tituloActual += 1
 
 struct Cuboide {
     var alto = 0.0, ancho = 0.0, profundidad = 0.0
@@ -353,4 +354,53 @@ let cuboide = Cuboide(alto: 2, ancho: 4, profundidad: 5)
 cuboide.volumen // listo
 // cuboide.volumen = 20 // Error, solo lectura
 
+print("el volumen del objeto cuboide es: \(cuboide.volumen)")
 
+struct Area {
+    var base = 0.0, altura = 0.0
+}
+struct Perimetro {
+    var lado1 = 0.0, lado2 = 0.0, lado3 = 0.0
+}
+
+// Prueba rara
+
+// struct Triangulo {
+//    var datosParaArea = Area()
+//    var datosParaPerimetro = Perimetro()
+//    var perimetro: Perimetro {
+//        get{
+//            let perimetro = datosParaPerimetro.lado1 + datosParaPerimetro.lado2 + datosParaPerimetro.lado3
+//            return Perimetro(lado1: perimetro, lado2: perimetro, lado3: perimetro)
+//        }
+//        set{
+//            newValue.lado1 + newValue.lado2 + newValue.lado3
+//        }
+//
+//    }
+//}
+
+// var trianguloRectangulo = Triangulo(datosParaArea: Area(base: 20, altura: 10), datosParaPerimetro: Perimetro(lado1: 10, lado2: 10, lado3: 10))
+// print(trianguloRectangulo.perimetro)
+// trianguloRectangulo.perimetro = Perimetro(lado1: 30, lado2: 30, lado3: 30)
+
+
+tituloActual += 1
+titulo(tituloActual)
+
+class PrecioDeConsola{
+    var precio: Double = 0.0{
+        didSet{
+            print("El valor antiguo era \(oldValue) \n")
+        }
+        willSet{
+            print("El nuevo precio es \(newValue)")
+        }
+    }
+}
+
+var ps5 = PrecioDeConsola()
+ps5.precio = 100
+ps5.precio = 300
+
+// Falta hacer la prueba de video juego
