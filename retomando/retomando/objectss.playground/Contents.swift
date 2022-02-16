@@ -270,11 +270,10 @@ print(manager.importador.nombreDeArchivo, manager.datos)
 tituloActual = 6
 titulo(tituloActual)
 
-class Usuario{
+class Usuario {
     let nombre: String = "JoeDoe"
     var edad: UInt8 = 18
     let altura: Float = 1.70
-    
     var puedeIniciarSesion: Bool { // Computed propertie
         return edad >= 18
     }
@@ -298,11 +297,6 @@ juan === joe // Entre copias , se referencia la mima posición de memoria
 
 // si cambio juan, cambio a joe y viciversa
 
-
-
-
-
-
 joe.edad = 16
 juan
 juan.edad = 20
@@ -314,7 +308,6 @@ struct Tamaño {
 struct Puntos {
     var puntoX = 0.0, puntoY = 0.0
 }
-
 
 struct Rectangulo {
     var origen = Puntos()
@@ -378,22 +371,21 @@ struct Perimetro {
 //        }
 //
 //    }
-//}
+// }
 
 // var trianguloRectangulo = Triangulo(datosParaArea: Area(base: 20, altura: 10), datosParaPerimetro: Perimetro(lado1: 10, lado2: 10, lado3: 10))
 // print(trianguloRectangulo.perimetro)
 // trianguloRectangulo.perimetro = Perimetro(lado1: 30, lado2: 30, lado3: 30)
 
-
 tituloActual += 1
 titulo(tituloActual)
 
-class PrecioDeConsola{
-    var precio: Double = 0.0{
-        didSet{
+class PrecioDeConsola {
+    var precio: Double = 0.0 {
+        didSet {
             print("El valor antiguo era \(oldValue) \n")
         }
-        willSet{
+        willSet {
             print("El nuevo precio es \(newValue)")
         }
     }
@@ -403,4 +395,60 @@ var ps5 = PrecioDeConsola()
 ps5.precio = 100
 ps5.precio = 300
 
-// Falta hacer la prueba de video juego
+class ContadorDePasosDemo {
+    var pasosTotales: Int = 0 { // Cuando esto cambia se hara el didSet
+        willSet { // Antes de (new Value), no se usa mucho
+            print("los pasos son: Valor actual \(pasosTotales) y Valor nuevo \(newValue)")
+        }
+        didSet { // Despues de (old Value)
+            print("los pason son Valor nuevo:\(pasosTotales), y valor viejo \(oldValue)\n")
+        }
+    }
+}
+
+let contadorDePasosDemo = ContadorDePasosDemo()
+contadorDePasosDemo.pasosTotales = 10
+contadorDePasosDemo.pasosTotales = 20
+
+class ContadorDePasos {
+    var pasosTotales: Int = 0 { // Cuando esto cambia se hara el didSet
+        willSet { // Antes de (new Value), no se usa mucho
+            print("Los pasos dados son \(newValue)")
+        }
+        didSet { // Despues de (old Value)
+            if pasosTotales > oldValue{
+                print("la diferencia con respecto a los pasos dados anteriormente es: \(pasosTotales - oldValue)\n")
+            }
+        }
+    }
+}
+
+let contadorDePasos = ContadorDePasos()
+contadorDePasos.pasosTotales = 10
+contadorDePasos.pasosTotales = 30
+contadorDePasos.pasosTotales = 300
+
+class VidaDelJugador {
+    var saludDelJugador: Int = 0 {
+        didSet {
+            if saludDelJugador >= 100 {
+                print("Tienes la salud al máximo!")
+            } else if saludDelJugador <= 0 {
+               print("Game Over")
+            } else {
+                print("Tu salud actual es de \(saludDelJugador)%, antes tenias \(oldValue)% de salud")
+            }
+        }
+    }
+}
+var jugador = VidaDelJugador()
+jugador.saludDelJugador = 40
+jugador.saludDelJugador = -50
+jugador.saludDelJugador = 500
+jugador.saludDelJugador = 0
+jugador
+
+tituloActual += 1
+titulo(tituloActual)
+
+
