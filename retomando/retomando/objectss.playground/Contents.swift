@@ -437,6 +437,11 @@ class VidaDelJugador {
                print("Game Over")
             } else {
                 print("Tu salud actual es de \(saludDelJugador)%, antes tenias \(oldValue)% de salud")
+                if saludDelJugador > oldValue {
+                    print("Tu salud aumento en \(saludDelJugador - oldValue) punto(s)")
+                } else if saludDelJugador < oldValue {
+                    print("Tu salud disminuyo en \(oldValue - saludDelJugador) punto(s)")
+                }
             }
         }
     }
@@ -447,8 +452,18 @@ jugador.saludDelJugador = -50
 jugador.saludDelJugador = 500
 jugador.saludDelJugador = 0
 jugador
+jugador.saludDelJugador = 40
+jugador.saludDelJugador = 50
+jugador.saludDelJugador = 20
+jugador.saludDelJugador = 10
+jugador.saludDelJugador = 3
 
 tituloActual += 1
-titulo(tituloActual)
+titulo(tituloActual) // Static 😈
 
+class MiembroDeLaFamilia { // Tipo
+    static var presupuestoComida: Int = 300
+}
+
+print(MiembroDeLaFamilia.presupuestoComida)
 
