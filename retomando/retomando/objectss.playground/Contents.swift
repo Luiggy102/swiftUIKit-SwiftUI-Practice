@@ -517,3 +517,50 @@ print(contador.contador)
 
 tituloActual += 1
 titulo(tituloActual)
+
+struct Punto {
+    var puntoX = 0.0, puntoY = 0.0
+    
+    mutating func moverPunto(x deltaX: Double, y deltaY: Double) {
+        self.puntoX += deltaX
+        self.puntoY += deltaY
+    }
+}
+
+var instanciaDePunto = Punto()
+print(instanciaDePunto)
+instanciaDePunto.puntoY
+instanciaDePunto.puntoX
+
+instanciaDePunto.moverPunto(x: 20, y: -30)
+instanciaDePunto.puntoY
+instanciaDePunto.puntoX
+
+print(instanciaDePunto)
+
+enum diferentesEstados {
+    case apagado, bajo, alto
+    
+   mutating func siguiente() {
+        switch self {
+        case .apagado:
+            self = .bajo
+        case .bajo:
+            self = .alto
+        case .alto:
+            self = .apagado
+        }
+    }
+}
+
+var statusDeEstados = diferentesEstados.apagado
+print(statusDeEstados)
+statusDeEstados.siguiente()
+print(statusDeEstados)
+statusDeEstados.siguiente()
+print(statusDeEstados)
+statusDeEstados.siguiente()
+print(statusDeEstados)
+
+tituloActual += 1
+titulo(tituloActual)
