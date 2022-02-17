@@ -471,7 +471,7 @@ class PersonInHome {
     static var presupuesto = 100
     var name = ""
     
-    func hacerCompras(_ gasto: Int, _ detalle: String) -> Void {
+    func hacerCompras(_ gasto: Int, _ detalle: String) -> Void { // Metodo
         PersonInHome.presupuesto -= gasto
         print("\(name) compró \(detalle) y ahora el presupuesto es de \(PersonInHome.presupuesto)")
     }
@@ -514,3 +514,6 @@ contador.incrementarPor(cantidad: 20)
 print(contador.contador)
 contador.resetearContador()
 print(contador.contador)
+
+tituloActual += 1
+titulo(tituloActual)
