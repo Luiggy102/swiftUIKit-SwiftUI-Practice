@@ -77,7 +77,7 @@ var modulo = { (modulo: UInt8) -> Void in
         print(Modulos.modulo2.rawValue)
         var contador = 1
         for clase in Clases.allCases {
-            if contador > 3 && contador < 11 {
+            if contador > 3 && contador < 10 {
                 print(clase.rawValue)
             } else if contador == 11 {
                 break
@@ -88,7 +88,7 @@ var modulo = { (modulo: UInt8) -> Void in
         print(Modulos.modulo3.rawValue)
         var contador = 1
         for clase in Clases.allCases {
-            if contador > 10 && contador < 17 {
+            if contador > 9 && contador < 17 {
                 print(clase.rawValue)
             } else if contador == 17 {
                 break
@@ -459,11 +459,58 @@ jugador.saludDelJugador = 10
 jugador.saludDelJugador = 3
 
 tituloActual += 1
-titulo(tituloActual) // Static 😈
+titulo(tituloActual) // Static 😈 // Type Properties
 
 class MiembroDeLaFamilia { // Tipo
-    static var presupuestoComida: Int = 300
+    static var presupuestoGeneral: Int = 300
+    var presupuestoPersonal = 0
+    
 }
 
-print(MiembroDeLaFamilia.presupuestoComida)
+class PersonInHome {
+    static var presupuesto = 100
+    var name = ""
+    
+    func hacerCompras(_ gasto: Int, _ detalle: String) -> Void {
+        PersonInHome.presupuesto -= gasto
+        print("\(name) compró \(detalle) y ahora el presupuesto es de \(PersonInHome.presupuesto)")
+    }
+}
 
+let enzo = PersonInHome()
+let meli = PersonInHome()
+
+enzo.name = "Enzo"
+meli.name = "Meli"
+
+enzo.hacerCompras(10, "Panes")
+meli.hacerCompras(20, "Agua")
+
+moduloActual += 1
+modulo(moduloActual)
+
+tituloActual += 1
+titulo(tituloActual)
+
+class Contador {
+    var contador = 0 // propiedad
+    
+    func incrementarPorUno(){ // metodo
+        self.contador += 1 // se marca la propiedad con self
+    }
+    func incrementarPor(cantidad: Int) {
+        self.contador += cantidad
+    }
+    func resetearContador() {
+        self.contador = 0 // modificar propiedades
+    }
+}
+
+var contador = Contador()
+print(contador.contador)
+contador.incrementarPorUno()
+print(contador.contador)
+contador.incrementarPor(cantidad: 20)
+print(contador.contador)
+contador.resetearContador()
+print(contador.contador)
