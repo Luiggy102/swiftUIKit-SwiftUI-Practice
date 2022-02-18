@@ -538,7 +538,7 @@ instanciaDePunto.puntoX
 
 print(instanciaDePunto)
 
-enum diferentesEstados {
+enum DiferentesEstados {
     case apagado, bajo, alto
     
    mutating func siguiente() {
@@ -553,7 +553,7 @@ enum diferentesEstados {
     }
 }
 
-var statusDeEstados = diferentesEstados.apagado
+var statusDeEstados = DiferentesEstados.apagado
 print(statusDeEstados)
 statusDeEstados.siguiente()
 print(statusDeEstados)
