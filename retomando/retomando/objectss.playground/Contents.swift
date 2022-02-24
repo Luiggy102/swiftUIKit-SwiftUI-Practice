@@ -1,5 +1,6 @@
 import UIKit
 import CoreGraphics
+import SwiftUI
 
 let laQueSeViene = "Programación Orientada a Objetos"
 print(laQueSeViene)
@@ -611,4 +612,16 @@ var jugador1 = Jugador(nombre: "Luiggy")
 tituloActual += 1
 titulo(tituloActual)
 
+enum SistemaSolarPlanetas: Int {
+   case mercury = 1, venus, earth, mars, jupiter, saturn, uranus, neptune
+   
+    static subscript (numero: Int) -> SistemaSolarPlanetas {
+//        guard numero <= sistemaSolarPlanetas.RawValue.max else {
+//            return "Coloque un número Valido"
+//        }
+        return SistemaSolarPlanetas(rawValue: numero)!
+    }
+    
+}
 
+SistemaSolarPlanetas[1] // subscripts en enum
