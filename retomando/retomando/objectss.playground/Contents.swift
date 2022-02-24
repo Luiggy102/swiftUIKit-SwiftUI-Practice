@@ -563,6 +563,52 @@ statusDeEstados.siguiente()
 print(statusDeEstados)
 
 tituloActual += 1
+titulo(tituloActual) // Repasar: metodos de clase, el ejemplo
+
+
+class MetodoDeClases {
+    static var varibleString = "Esto es un String"
+    static var arrayStatic = [String]()
+    class func algunMetodo() {
+        print("Hola, \(self.varibleString)")
+    }
+    func agregarleUnStringAlArrayStatic (elString elMismo: String) -> Void {
+        MetodoDeClases.arrayStatic.append(contentsOf: [elMismo])
+    }
+}
+
+MetodoDeClases.algunMetodo()
+MetodoDeClases.varibleString
+
+
+var instanciaDeMetodoDeClase = MetodoDeClases()
+instanciaDeMetodoDeClase.self
+instanciaDeMetodoDeClase.agregarleUnStringAlArrayStatic(elString: "Prueba")
+MetodoDeClases.arrayStatic
+instanciaDeMetodoDeClase.agregarleUnStringAlArrayStatic(elString: "Prueba 2")
+MetodoDeClases.arrayStatic
+
+struct TrackerDeNiveles {
+    static var nivelMasAltoDeTodos: UInt = 1
+    var nivelActual = 1
+}
+
+class Jugador {
+    var tracker = TrackerDeNiveles()
+    let nombreDeJugador: String
+    
+    func completarNivel (nivel: UInt) {
+        
+    }
+    
+    init(nombre: String) {
+        self.nombreDeJugador = nombre
+    }
+}
+
+var jugador1 = Jugador(nombre: "Luiggy")
+
+tituloActual += 1
 titulo(tituloActual)
 
 
