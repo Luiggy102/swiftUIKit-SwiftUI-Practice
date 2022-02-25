@@ -188,10 +188,10 @@ print("El titulo es \"\(instanciaDeModoDeVideo.nombre!)\" la resolución es \(in
 tituloActual = 2
 titulo(tituloActual)
 
-let hd = Resolución(width: 1920, height: 1080) // otro espacio de memoria a partir de resolución, copia de datos
-print("hd =", hd)
+let hdRes = Resolución(width: 1920, height: 1080) // otro espacio de memoria a partir de resolución, copia de datos
+print("hd =", hdRes)
 
-var cinema = hd
+var cinema = hdRes
 print("Cinema =", cinema)
 cinema.width = 2018
 print("Cinema =", cinema)
@@ -417,7 +417,7 @@ class ContadorDePasos {
             print("Los pasos dados son \(newValue)")
         }
         didSet { // Despues de (old Value)
-            if pasosTotales > oldValue{
+            if pasosTotales > oldValue {
                 print("la diferencia con respecto a los pasos dados anteriormente es: \(pasosTotales - oldValue)\n")
             }
         }
@@ -447,6 +447,7 @@ class VidaDelJugador {
         }
     }
 }
+
 var jugador = VidaDelJugador()
 jugador.saludDelJugador = 40
 jugador.saludDelJugador = -50
@@ -465,14 +466,12 @@ titulo(tituloActual) // Static 😈 // Type Properties
 class MiembroDeLaFamilia { // Tipo
     static var presupuestoGeneral: Int = 300
     var presupuestoPersonal = 0
-    
 }
 
 class PersonInHome {
     static var presupuesto = 100
     var name = ""
-    
-    func hacerCompras(_ gasto: Int, _ detalle: String) -> Void { // Metodo
+    func hacerCompras(_ gasto: Int, _ detalle: String) { // Metodo
         PersonInHome.presupuesto -= gasto
         print("\(name) compró \(detalle) y ahora el presupuesto es de \(PersonInHome.presupuesto)")
     }
@@ -495,8 +494,7 @@ titulo(tituloActual)
 
 class Contador {
     var contador = 0 // propiedad
-    
-    func incrementarPorUno(){ // metodo
+    func incrementarPorUno() { // metodo
         self.contador += 1 // se marca la propiedad con self
     }
     func incrementarPor(cantidad: Int) {
@@ -521,7 +519,6 @@ titulo(tituloActual)
 
 struct Punto {
     var puntoX = 0.0, puntoY = 0.0
-    
     mutating func moverPunto(x deltaX: Double, y deltaY: Double) {
         self.puntoX += deltaX
         self.puntoY += deltaY
@@ -541,7 +538,6 @@ print(instanciaDePunto)
 
 enum DiferentesEstados {
     case apagado, bajo, alto
-    
    mutating func siguiente() {
         switch self {
         case .apagado:
@@ -566,21 +562,19 @@ print(statusDeEstados)
 tituloActual += 1
 titulo(tituloActual) // Repasar: metodos de clase, el ejemplo
 
-
 class MetodoDeClases {
     static var varibleString = "Esto es un String"
     static var arrayStatic = [String]()
     class func algunMetodo() {
         print("Hola, \(self.varibleString)")
     }
-    func agregarleUnStringAlArrayStatic (elString elMismo: String) -> Void {
+    func agregarleUnStringAlArrayStatic (elString elMismo: String) {
         MetodoDeClases.arrayStatic.append(contentsOf: [elMismo])
     }
 }
 
 MetodoDeClases.algunMetodo()
 MetodoDeClases.varibleString
-
 
 var instanciaDeMetodoDeClase = MetodoDeClases()
 instanciaDeMetodoDeClase.self
@@ -597,11 +591,8 @@ struct TrackerDeNiveles {
 class Jugador {
     var tracker = TrackerDeNiveles()
     let nombreDeJugador: String
-    
     func completarNivel (nivel: UInt) {
-        
     }
-    
     init(nombre: String) {
         self.nombreDeJugador = nombre
     }
@@ -614,14 +605,11 @@ titulo(tituloActual)
 
 enum SistemaSolarPlanetas: Int {
    case mercury = 1, venus, earth, mars, jupiter, saturn, uranus, neptune
-   
     static subscript (numero: Int) -> SistemaSolarPlanetas {
 //        guard numero <= sistemaSolarPlanetas.RawValue.max else {
 //            return "Coloque un número Valido"
 //        }
         return SistemaSolarPlanetas(rawValue: numero)!
     }
-    
 }
-
 SistemaSolarPlanetas[1] // subscripts en enum
