@@ -203,7 +203,7 @@ let diezOchenta = ModoDeVideo()
 
 diezOchenta.nombre = "Ejemplo de clase"
 diezOchenta.frameRate = 25.0
-diezOchenta.resolución = hd
+diezOchenta.resolución = hdRes
 diezOchenta.enlazado = false
 
 print("Diez Ochenta")
@@ -584,14 +584,34 @@ instanciaDeMetodoDeClase.agregarleUnStringAlArrayStatic(elString: "Prueba 2")
 MetodoDeClases.arrayStatic
 
 struct TrackerDeNiveles {
-    static var nivelMasAltoDeTodos: UInt = 1
+    static var nivelMasAltoDeTodos = 1
     var nivelActual = 1
+    
+    static func desbloquea(_ nivel: Int) { // para desbloquear sig nivel
+        if nivel > nivelMasAltoDeTodos {
+            nivelMasAltoDeTodos = nivel
+        }
+    }
+    // Comprobar si un nivel esta desbloqueado
+    static func estaDesbloqueado(_ nivel: Int) -> Bool {
+        return nivel <= nivelMasAltoDeTodos
+    }
+    // Ver si se puede avanzar a un nivel
+    mutating func avanzar(a nivel: Int) -> Bool {
+        if TrackerDeNiveles.estaDesbloqueado(nivel) {
+            nivelActual = nivel
+            return true
+        } else {
+            return false
+        }
+    }
 }
 
 class Jugador {
     var tracker = TrackerDeNiveles()
     let nombreDeJugador: String
     func completarNivel (nivel: UInt) {
+        
     }
     init(nombre: String) {
         self.nombreDeJugador = nombre
@@ -599,9 +619,14 @@ class Jugador {
 }
 
 var jugador1 = Jugador(nombre: "Luiggy")
-
+TrackerDeNiveles.desbloquea(2)
+TrackerDeNiveles.nivelMasAltoDeTodos
+TrackerDeNiveles.estaDesbloqueado(5)
 tituloActual += 1
 titulo(tituloActual)
+jugador1
+jugador1.tracker.nivelActual
+jugador1.tracker.avanzar(a: 4) // no puede, 4 no esta desbloqueado aún
 
 enum SistemaSolarPlanetas: Int {
    case mercury = 1, venus, earth, mars, jupiter, saturn, uranus, neptune
@@ -612,4 +637,9 @@ enum SistemaSolarPlanetas: Int {
         return SistemaSolarPlanetas(rawValue: numero)!
     }
 }
-SistemaSolarPlanetas[1] // subscripts en enum
+SistemaSolarPlanetas[3] // subscripts en enum
+print(SistemaSolarPlanetas[6])
+
+tituloActual += 1
+titulo(tituloActual)
+
