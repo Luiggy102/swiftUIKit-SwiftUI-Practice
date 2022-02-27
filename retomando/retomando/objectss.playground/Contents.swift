@@ -610,8 +610,9 @@ struct TrackerDeNiveles {
 class Jugador {
     var tracker = TrackerDeNiveles()
     let nombreDeJugador: String
-    func completarNivel (nivel: UInt) {
-        
+    func completarNivel (nivel: Int) {
+        TrackerDeNiveles.desbloquea(nivel + 1)
+        tracker.avanzar(a: nivel + 1)
     }
     init(nombre: String) {
         self.nombreDeJugador = nombre
