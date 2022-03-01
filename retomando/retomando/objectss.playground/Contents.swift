@@ -640,7 +640,21 @@ enum SistemaSolarPlanetas: Int {
 }
 SistemaSolarPlanetas[3] // subscripts en enum
 print(SistemaSolarPlanetas[6])
+type(of: SistemaSolarPlanetas[2])
 
 tituloActual += 1
 titulo(tituloActual)
 
+struct Matriz {
+    let filas: Int, columnas: Int
+    var parrila: [Double] // contenido de la matriz
+    
+    init (filas: Int, columnas: Int) {
+        self.filas = filas
+        self.columnas = columnas
+        
+        parrila = Array(repeating: 0.0, count: filas * columnas)
+    }
+}
+
+var matriz = Matriz(filas: 2, columnas: 2)
