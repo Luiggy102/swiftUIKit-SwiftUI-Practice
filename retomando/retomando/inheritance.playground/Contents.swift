@@ -161,17 +161,21 @@ class Vehicle { // la super clase
 let someVehicle = Vehicle()
 print(someVehicle.description)
 
-class Bicycle: Vehicle { // hijo de vehicle
-    var hasBasket = false
+class Bicycle: Vehicle { // hijo de vehicle, hereda todas sus propiedades y metodos
+    var hasBasket = false // aunq no se vean
+    override func makeNoise() {
+        print("trin trin")
+    }
 }
 
 let bicycle = Bicycle()
 bicycle.hasBasket = true
 bicycle.currentSpeed = 15.0
+bicycle.makeNoise()
 
 print(bicycle.description)
 
-class Tandem: Bicycle{
+class Tandem: Bicycle{ // herencia: pasar clase como tipo de dato
     var currentNumberOfPassengers = 0
 }
 
