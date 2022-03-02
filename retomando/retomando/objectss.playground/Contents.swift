@@ -658,3 +658,6 @@ struct Matriz {
 }
 
 var matriz = Matriz(filas: 2, columnas: 2)
+
+tituloActual += 1
+titulo(tituloActual)
