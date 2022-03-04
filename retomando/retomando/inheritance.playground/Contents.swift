@@ -249,3 +249,41 @@ print(boilingPointWater.temperature)
 let freezingPointWater = Celsius(fromKelvin: 273.15) // Congelación del augua
 print(freezingPointWater.temperature)
 
+tituloActual += 1
+titulo(tituloActual)
+
+struct Color {
+    let red, green, blue: Double
+    
+    init(red: Double, green: Double, blue: Double) { // Inicializar variables
+        self.red = red
+        self.blue = blue
+        self.green = green
+    }
+}
+
+class SurveyQuestion {
+    let text: String
+    var response: String? // si no se pone optional, me va a pedir inicializar
+    
+    init(_ text: String) {
+        self.text = text
+    }
+    
+    func ask(){
+        print(self.text)
+    }
+}
+
+let question1 = SurveyQuestion("Te gusta la computación?")
+question1.response = "Si me gusta la computación"
+print(question1.text, question1.response!)
+
+let question2 = SurveyQuestion("Cual es el mejor lenguaje de programción?")
+question2.response = "Swift pues"
+
+print(question2.text, question2.response!)
+
+tituloActual += 1
+titulo(tituloActual)
+
