@@ -155,6 +155,7 @@ class Vehicle { // la super clase
     }
     func makeNoise(){
         //do nothing, porque cada vehículo tiene su propia forma de hacer ruido
+        print("El sonido depende del vehículo")
     }
 }
 
@@ -163,9 +164,6 @@ print(someVehicle.description)
 
 class Bicycle: Vehicle { // hijo de vehicle, hereda todas sus propiedades y metodos
     var hasBasket = false // aunq no se vean
-    override func makeNoise() {
-        print("trin trin")
-    }
 }
 
 let bicycle = Bicycle()
@@ -184,3 +182,36 @@ tandem.hasBasket = true
 tandem.currentNumberOfPassengers = 2
 tandem.currentSpeed = 22.0
 print(tandem.description)
+
+tituloActual += 1
+titulo(tituloActual)
+
+class Train: Vehicle {
+    var numberOfWagons: Int = 0
+    final override func makeNoise() { // override // final
+        print("choo choo")
+    }
+}
+
+let train = Train()
+train.description
+train.numberOfWagons = 10
+train.makeNoise()
+tandem.makeNoise()
+
+// super
+
+class Car: Vehicle {
+    var gear: UInt8 = 1
+    override var description: String{
+        return super.description + " en la marcha \(self.gear)" // super
+    }
+}
+
+let car = Car()
+car.currentSpeed = 100.0
+print(car.description)
+train.makeNoise()
+
+tituloActual += 1
+titulo(tituloActual)
