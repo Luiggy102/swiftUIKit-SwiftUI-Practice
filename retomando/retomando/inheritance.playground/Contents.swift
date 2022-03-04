@@ -215,3 +215,37 @@ train.makeNoise()
 
 tituloActual += 1
 titulo(tituloActual)
+
+struct Fahrenheit {
+    var temperature: Double
+    var description: String {
+        get{
+            return "la temperatura es de \(temperature) fahrenheit"
+        }
+    }
+    init() { // dar valor a propiedades
+        self.temperature = 32
+    }
+}
+
+let fahrenheit = Fahrenheit()
+fahrenheit.temperature
+print(fahrenheit.description)
+
+struct Celsius {
+    var temperature: Double
+    
+    init(fromFahrenheit fahrenheit: Double) { // tranformar celsius a fahrenheit
+        self.temperature = (fahrenheit - 32)/1.8
+    }
+    init(fromKelvin kelvin: Double) {
+        self.temperature = kelvin - 273.15
+    }
+}
+
+let boilingPointWater = Celsius(fromFahrenheit: 212) // Ebullición del agua
+print(boilingPointWater.temperature)
+
+let freezingPointWater = Celsius(fromKelvin: 273.15) // Congelación del augua
+print(freezingPointWater.temperature)
+
