@@ -287,3 +287,47 @@ print(question2.text, question2.response!)
 tituloActual += 1
 titulo(tituloActual)
 
+// Designado -> Designado super clase
+// Conveniencia -> Otro init de la misma clase
+// El último init que se llame siempre debe ser designado // super.init()
+
+class Vehiculo {
+    
+    var numeroDeRuedas: UInt8
+    var esElectrico: Bool?
+    var descripcion: String{
+        return "El número de ruedas es \(numeroDeRuedas)"
+    }
+    
+    init(nDeRuedas: UInt8){ // Designado
+        self.numeroDeRuedas = nDeRuedas
+    }
+    
+    convenience init(esElectrico: Bool?) { // Conveniencia
+        self.init(nDeRuedas: 4) // Inicializador de refuerzo
+        self.esElectrico = esElectrico // Tiene que tener el init original, o en el hijo el super.init()
+    }
+}
+
+let teslaX = Vehiculo(esElectrico: true)
+print(teslaX.descripcion)
+
+class Carro: Vehiculo  {
+    let bateriaBase: UInt16
+    override var descripcion: String{
+        if esElectrico!{
+            return super.descripcion + " y es electrico"
+        } else {
+            return super.descripcion + " y no es electrico"
+        }
+    }
+    init(bateriaEnMh bateria: UInt16) {
+        self.bateriaBase = bateria
+        super.init(nDeRuedas: 4) // Último init designado
+    }
+}
+
+let teslaY = Carro(bateriaEnMh: 4000)
+
+tituloActual += 1
+titulo(tituloActual)
