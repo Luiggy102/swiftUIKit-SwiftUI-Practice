@@ -48,6 +48,7 @@
 		8480356C279EE3FF0060909D /* RetomandoUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetomandoUITest.swift; sourceTree = "<group>"; };
 		8480356E279EE3FF0060909D /* RetomandoUITestsLaunchTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetomandoUITestsLaunchTest.swift; sourceTree = "<group>"; };
 		8480357B279EE9400060909D /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		8485C27F27D8204B00076C5C /* optionalss.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = optionalss.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		84DD5E0927A9EB1B0064C370 /* funcss.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = funcss.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
@@ -99,6 +100,7 @@
 		84803550279EE3FE0060909D /* retomando */ = {
 			isa = PBXGroup;
 			children = (
+				8485C27F27D8204B00076C5C /* optionalss.playground */,
 				8469353C27D01E8200FADDB7 /* inheritance.playground */,
 				84803551279EE3FE0060909D /* RetomandoApp.swift */,
 				84803553279EE3FE0060909D /* ContentView.swift */,

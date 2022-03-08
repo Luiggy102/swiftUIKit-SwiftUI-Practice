@@ -406,4 +406,7 @@ jugador1?.monedasEnElBolsillo
 Banco.momedasEnElBanco
 
 jugador1 = nil // desinicializador
-Banco.momedasEnElBanco
+print(Banco.momedasEnElBanco)
+
+tituloActual += 1
+titulo(tituloActual)
