@@ -331,3 +331,48 @@ let teslaY = Carro(bateriaEnMh: 4000)
 
 tituloActual += 1
 titulo(tituloActual)
+
+enum TemperatureUnit {
+case Kelvin, Celsius, Fahrenheit
+    
+    init?(symbol: Character) {
+        switch symbol {
+        case "K":
+            self = TemperatureUnit.Kelvin
+        case "C":
+            self = TemperatureUnit.Celsius
+        case "F":
+            self = TemperatureUnit.Fahrenheit
+        default:
+            return nil
+        }
+    }
+}
+
+var someUnit = TemperatureUnit(symbol: "F")
+someUnit = .init(symbol: "C")
+
+class Product{
+    let name: String
+    init?(name: String) { // Designado
+        if name.isEmpty{ // Puede devolver un nombre vacio
+            return nil
+        }
+        self.name = name
+    }
+}
+
+class CartItem: Product{
+    let quantity: Int
+    init?(name: String, quantity: Int){ // Conveniencia
+        if quantity < 1{
+            return nil
+        }
+        self.quantity = quantity
+        super.init(name: name) // Designado al final
+    }
+}
+
+if let someSocks = CartItem(name: "Socks", quantity: 2){
+    print("\(someSocks.name) - \(someSocks.quantity)")
+}
