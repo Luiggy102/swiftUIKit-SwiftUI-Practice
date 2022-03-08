@@ -150,11 +150,11 @@ titulo(tituloActual)
 
 class Vehicle { // la super clase
     var currentSpeed = 0.0
-    var description: String{
+    var description: String {
         return "Viajando a \(currentSpeed) km/h"
     }
-    func makeNoise(){
-        //do nothing, porque cada vehículo tiene su propia forma de hacer ruido
+    func makeNoise() {
+        // do nothing, porque cada vehículo tiene su propia forma de hacer ruido
         print("El sonido depende del vehículo")
     }
 }
@@ -173,7 +173,7 @@ bicycle.makeNoise()
 
 print(bicycle.description)
 
-class Tandem: Bicycle{ // herencia: pasar clase como tipo de dato
+class Tandem: Bicycle { // herencia: pasar clase como tipo de dato
     var currentNumberOfPassengers = 0
 }
 
@@ -203,7 +203,7 @@ tandem.makeNoise()
 
 class Car: Vehicle {
     var gear: UInt8 = 1
-    override var description: String{
+    override var description: String {
         return super.description + " en la marcha \(self.gear)" // super
     }
 }
@@ -219,9 +219,7 @@ titulo(tituloActual)
 struct Fahrenheit {
     var temperature: Double
     var description: String {
-        get{
             return "la temperatura es de \(temperature) fahrenheit"
-        }
     }
     init() { // dar valor a propiedades
         self.temperature = 32
@@ -234,7 +232,6 @@ print(fahrenheit.description)
 
 struct Celsius {
     var temperature: Double
-    
     init(fromFahrenheit fahrenheit: Double) { // tranformar celsius a fahrenheit
         self.temperature = (fahrenheit - 32)/1.8
     }
@@ -254,7 +251,6 @@ titulo(tituloActual)
 
 struct Color {
     let red, green, blue: Double
-    
     init(red: Double, green: Double, blue: Double) { // Inicializar variables
         self.red = red
         self.blue = blue
@@ -265,12 +261,10 @@ struct Color {
 class SurveyQuestion {
     let text: String
     var response: String? // si no se pone optional, me va a pedir inicializar
-    
     init(_ text: String) {
         self.text = text
     }
-    
-    func ask(){
+    func ask() {
         print(self.text)
     }
 }
@@ -292,17 +286,14 @@ titulo(tituloActual)
 // El último init que se llame siempre debe ser designado // super.init()
 
 class Vehiculo {
-    
     var numeroDeRuedas: UInt8
     var esElectrico: Bool?
-    var descripcion: String{
+    var descripcion: String {
         return "El número de ruedas es \(numeroDeRuedas)"
     }
-    
-    init(nDeRuedas: UInt8){ // Designado
+    init(nDeRuedas: UInt8) { // Designado
         self.numeroDeRuedas = nDeRuedas
     }
-    
     convenience init(esElectrico: Bool?) { // Conveniencia
         self.init(nDeRuedas: 4) // Inicializador de refuerzo
         self.esElectrico = esElectrico // Tiene que tener el init original, o en el hijo el super.init()
@@ -312,10 +303,10 @@ class Vehiculo {
 let teslaX = Vehiculo(esElectrico: true)
 print(teslaX.descripcion)
 
-class Carro: Vehiculo  {
+class Carro: Vehiculo {
     let bateriaBase: UInt16
-    override var descripcion: String{
-        if esElectrico!{
+    override var descripcion: String {
+        if esElectrico! {
             return super.descripcion + " y es electrico"
         } else {
             return super.descripcion + " y no es electrico"
@@ -333,8 +324,7 @@ tituloActual += 1
 titulo(tituloActual)
 
 enum TemperatureUnit {
-case Kelvin, Celsius, Fahrenheit
-    
+case kelvin, celsius, fahrenheit
     init?(symbol: Character) {
         switch symbol {
         case "K":
@@ -352,20 +342,20 @@ case Kelvin, Celsius, Fahrenheit
 var someUnit = TemperatureUnit(symbol: "F")
 someUnit = .init(symbol: "C")
 
-class Product{
+class Product {
     let name: String
     init?(name: String) { // Designado
-        if name.isEmpty{ // Puede devolver un nombre vacio
+        if name.isEmpty { // Puede devolver un nombre vacio
             return nil
         }
         self.name = name
     }
 }
 
-class CartItem: Product{
+class CartItem: Product {
     let quantity: Int
-    init?(name: String, quantity: Int){ // Conveniencia
-        if quantity < 1{
+    init?(name: String, quantity: Int) { // Conveniencia
+        if quantity < 1 {
             return nil
         }
         self.quantity = quantity
@@ -373,6 +363,34 @@ class CartItem: Product{
     }
 }
 
-if let someSocks = CartItem(name: "Socks", quantity: 2){
+if let someSocks = CartItem(name: "Socks", quantity: 2) {
     print("\(someSocks.name) - \(someSocks.quantity)")
+}
+
+tituloActual += 1
+titulo(tituloActual)
+
+// Jugador que muere, hacer que se desinicialice sus propiedades/métodos
+
+class Banco {
+    static var momedasEnElBanco = 2_000
+    static func retirar(monedas monedasSolicitadas: Int) -> Int {
+        // Si el jugador pide más de lo que hay, va a tomar todo lo que hay en el banco
+        let monedasADar = min(monedasSolicitadas, momedasEnElBanco)
+        momedasEnElBanco -= monedasADar
+        return monedasADar
+    }
+    static func depositar(monedas: Int) {
+        momedasEnElBanco += monedas
+    }
+}
+
+class Jugador {
+    var monedasEnElBolsillo: Int
+    init(monedas: Int) {
+        self.monedasEnElBolsillo = Banco.retirar(monedas: monedas)
+    }
+    deinit { // cuando jugador muere(jugador = nil), devuelve las monedas que tiene
+        Banco.depositar(monedas: monedasEnElBolsillo)
+    }
 }
