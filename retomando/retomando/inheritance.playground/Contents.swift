@@ -328,11 +328,11 @@ case kelvin, celsius, fahrenheit
     init?(symbol: Character) {
         switch symbol {
         case "K":
-            self = TemperatureUnit.Kelvin
+            self = TemperatureUnit.kelvin
         case "C":
-            self = TemperatureUnit.Celsius
+            self = TemperatureUnit.celsius
         case "F":
-            self = TemperatureUnit.Fahrenheit
+            self = TemperatureUnit.fahrenheit
         default:
             return nil
         }
@@ -390,7 +390,20 @@ class Jugador {
     init(monedas: Int) {
         self.monedasEnElBolsillo = Banco.retirar(monedas: monedas)
     }
+    func ganar(monedas: Int) {
+        monedasEnElBolsillo += Banco.retirar(monedas: monedas)
+    }
     deinit { // cuando jugador muere(jugador = nil), devuelve las monedas que tiene
         Banco.depositar(monedas: monedasEnElBolsillo)
     }
 }
+
+// de tipo opcional, para desinicializarlo en el futuro
+var jugador1: Jugador? = Jugador(monedas: 100)
+Banco.momedasEnElBanco
+jugador1?.ganar(monedas: 200)
+jugador1?.monedasEnElBolsillo
+Banco.momedasEnElBanco
+
+jugador1 = nil // desinicializador
+Banco.momedasEnElBanco
