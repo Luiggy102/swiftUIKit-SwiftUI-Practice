@@ -154,7 +154,7 @@ modulo(moduloActual)
 tituloActual = 22
 titulo(tituloActual)
 
-class Person {
+/* class Person {
     var residence: Residence? // no se debe asegurar que la persona tiene residencia
 }
 
@@ -183,6 +183,51 @@ if let roomCount = charles.residence?.numberOfRooms {
 } else {
     print("Charles no tiene casa")
 }
+*/
 
 tituloActual += 1
 titulo(tituloActual)
+
+// Estructuras
+
+class Person {
+    var residence: Residence?
+}
+
+class Residence {
+    var rooms = [Room]()
+    var numberOfRoom: Int {
+        return rooms.count
+    }
+    subscript(index: Int) -> Room {
+        get {
+            return rooms[index]
+        }
+        set {
+            rooms[index] = newValue
+        }
+    }
+}
+
+class Room {
+    let name: String
+    init(name: String) {
+        self.name = name
+    }
+}
+
+class Address {
+    var buildingName: String?
+    var buildingNumber: String?
+    var street: String?
+    
+    func buidingIdentifier() -> String? {
+        if let buildingNumber = buildingNumber, let street = street {
+            return "\(buildingNumber), \(street)"
+        } else if buildingName != nil {
+            return buildingName
+        } else {
+            return nil
+        }
+    }
+}
