@@ -233,6 +233,9 @@ class Address { // class dirección se vincula a la residencia
     }
 }
 
+tituloActual += 1
+titulo(tituloActual)
+
 let edgar = Person()
 
 if let roomCount = edgar.residence?.numberOfRoom { // no tiene residencia
@@ -254,9 +257,37 @@ edgar
 edgar.residence?[0].name
 
 if let roomCount = edgar.residence?.numberOfRoom {
-    print("La cantidad de cuartos es \(roomCount)") // Tiene residencia
+    print("Si tiene casa(s), la cantidad de cuartos en total es \(roomCount)") // Tiene residencia
 } else {
     print("no tiene casa")
 }
 
 edgar.residence?.numberOfRoom
+
+tituloActual += 1
+titulo(tituloActual)
+
+// let begginsWith13 = edgar.residence?.address?.buidingIdentifier()?.hasPrefix("13") ?? false // optional chaining
+// let edgarStreet = edgar.residence?.address?.street ?? "Calle desconocida"
+begginsWith13
+print(edgarStreet)
+
+func createAddress() -> Address {
+    let someAddress = Address()
+    someAddress.buildingNumber = "13"
+    someAddress.buildingName = "Wayne Mansion"
+    someAddress.street = "Gotham 098"
+    
+    return someAddress
+}
+
+let edgarAddress = createAddress()
+edgar.residence?.address = edgarAddress
+
+let edgarStreet = edgar.residence?.address?.street ?? "Calle desconocida"
+let begginsWith13 = edgar.residence?.address?.buidingIdentifier()?.hasPrefix("13") ?? false // optional chaining
+
+tituloActual += 1
+titulo(tituloActual)
+
+print("Felicidades a mi")
