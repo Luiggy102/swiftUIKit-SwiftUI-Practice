@@ -196,9 +196,11 @@ class Person {
 
 class Residence {
     var rooms = [Room]()
+    var address: Address?
     var numberOfRoom: Int {
         return rooms.count
     }
+    
     subscript(index: Int) -> Room {
         get {
             return rooms[index]
@@ -216,11 +218,10 @@ class Room {
     }
 }
 
-class Address {
+class Address { // class dirección se vincula a la residencia
     var buildingName: String?
     var buildingNumber: String?
     var street: String?
-    
     func buidingIdentifier() -> String? {
         if let buildingNumber = buildingNumber, let street = street {
             return "\(buildingNumber), \(street)"
@@ -231,3 +232,31 @@ class Address {
         }
     }
 }
+
+let edgar = Person()
+
+if let roomCount = edgar.residence?.numberOfRoom { // no tiene residencia
+    print("la cantidad de cuartos es \(roomCount)")
+} else {
+    print("no tiene casa")
+}
+
+// no se va a poder hacer nada hasta que no tenga residencia
+
+let edgarHouse = Residence()
+edgarHouse.rooms.append(Room(name: "Living Room"))
+edgarHouse.rooms.append(Room(name: "Bathroom"))
+edgarHouse.rooms.append(Room(name: "Kitchen"))
+
+edgar.residence = edgarHouse
+// Ya se puede ejecutar ese código
+edgar
+edgar.residence?[0].name
+
+if let roomCount = edgar.residence?.numberOfRoom {
+    print("La cantidad de cuartos es \(roomCount)") // Tiene residencia
+} else {
+    print("no tiene casa")
+}
+
+edgar.residence?.numberOfRoom
