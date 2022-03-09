@@ -154,3 +154,35 @@ modulo(moduloActual)
 tituloActual = 22
 titulo(tituloActual)
 
+class Person {
+    var residence: Residence? // no se debe asegurar que la persona tiene residencia
+}
+
+class Residence { // Residencia estandar
+    var numberOfRooms: UInt8 = 1
+}
+
+let charles = Person()
+
+// Error, Charles no tiene residencia
+// let roomCount = charles.residence!.numberOfRooms
+
+// optional chaining
+
+if let roomCount = charles.residence?.numberOfRooms {
+    print("Charles tiene una residencia con \(roomCount) habitación(es)")
+} else {
+    print("Charles no tiene casa")
+}
+
+charles.residence = Residence() // confirmar la residencia
+charles.residence?.numberOfRooms = 4
+
+if let roomCount = charles.residence?.numberOfRooms {
+    print("Charles tiene una residencia con \(roomCount) habitación(es)")
+} else {
+    print("Charles no tiene casa")
+}
+
+tituloActual += 1
+titulo(tituloActual)
