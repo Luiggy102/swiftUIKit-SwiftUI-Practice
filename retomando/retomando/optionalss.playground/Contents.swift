@@ -2,7 +2,6 @@ import UIKit
 
 var greeting = "Hello, playground"
 
-
 let laQueSeViene = "Programación Orientada a Objetos"
 print(laQueSeViene)
 
@@ -64,7 +63,7 @@ func imprimeTodasLasClases() {
 
 var moduloActual: UInt8 = 1
 var tituloActual: UInt8 = 1
-let separador = "========================================================================================================================"
+let separador = "============================================================"
 var modulo = { (modulo: UInt8) -> Void in
     switch modulo {
     case 1:
@@ -200,7 +199,6 @@ class Residence {
     var numberOfRoom: Int {
         return rooms.count
     }
-    
     subscript(index: Int) -> Room {
         get {
             return rooms[index]
@@ -277,7 +275,6 @@ func createAddress() -> Address {
     someAddress.buildingNumber = "13"
     someAddress.buildingName = "Wayne Mansion"
     someAddress.street = "Gotham 098"
-    
     return someAddress
 }
 

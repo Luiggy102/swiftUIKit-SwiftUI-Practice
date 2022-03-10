@@ -61,7 +61,7 @@ func imprimeTodasLasClases() {
 
 var moduloActual: UInt8 = 1
 var tituloActual: UInt8 = 1
-let separador = "========================================================================================================================"
+let separador = "============================================================="
 var modulo = { (modulo: UInt8) -> Void in
     switch modulo {
     case 1:

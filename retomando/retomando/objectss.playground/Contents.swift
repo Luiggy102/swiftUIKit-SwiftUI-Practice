@@ -63,7 +63,7 @@ func imprimeTodasLasClases() {
 
 var moduloActual: UInt8 = 1
 var tituloActual: UInt8 = 1
-let separador = "========================================================================================================================"
+let separador = "=========================================================================="
 var modulo = { (modulo: UInt8) -> Void in
     switch modulo {
     case 1:
@@ -183,7 +183,10 @@ instanciaDeModoDeVideo.resolución.width = 1920
 instanciaDeModoDeVideo.resolución.height = 1080
 instanciaDeModoDeVideo.enlazado = false
 
-print("El titulo es \"\(instanciaDeModoDeVideo.nombre!)\" la resolución es \(instanciaDeModoDeVideo.resolución) y tiene \(instanciaDeModoDeVideo.frameRate) frames")
+print("""
+    El titulo es \"\(instanciaDeModoDeVideo.nombre!)\"
+        la resolución es \(instanciaDeModoDeVideo.resolución) y tiene \(instanciaDeModoDeVideo.frameRate) frames
+""")
 
 tituloActual = 2
 titulo(tituloActual)
@@ -211,7 +214,8 @@ print(diezOchenta.nombre!, diezOchenta.enlazado, diezOchenta.resolución, diezOc
 
 print("Tambein Diez ochenta")
 let tambienDiezOchenta = diezOchenta
-print(tambienDiezOchenta.nombre!, tambienDiezOchenta.enlazado, tambienDiezOchenta.resolución, tambienDiezOchenta.frameRate)
+print(tambienDiezOchenta.nombre!, tambienDiezOchenta.enlazado,
+      tambienDiezOchenta.resolución, tambienDiezOchenta.frameRate)
 
 // Cambios a la clase
 tambienDiezOchenta.nombre = "cambios de clase\n"
@@ -374,7 +378,8 @@ struct Perimetro {
 //    }
 // }
 
-// var trianguloRectangulo = Triangulo(datosParaArea: Area(base: 20, altura: 10), datosParaPerimetro: Perimetro(lado1: 10, lado2: 10, lado3: 10))
+// var trianguloRectangulo = Triangulo(datosParaArea: Area(base: 20, altura: 10),
+// datosParaPerimetro: Perimetro(lado1: 10, lado2: 10, lado3: 10))
 // print(trianguloRectangulo.perimetro)
 // trianguloRectangulo.perimetro = Perimetro(lado1: 30, lado2: 30, lado3: 30)
 
@@ -586,7 +591,6 @@ MetodoDeClases.arrayStatic
 struct TrackerDeNiveles {
     static var nivelMasAltoDeTodos = 1
     var nivelActual = 1
-    
     static func desbloquea(_ nivel: Int) { // para desbloquear sig nivel
         if nivel > nivelMasAltoDeTodos {
             nivelMasAltoDeTodos = nivel
@@ -648,11 +652,9 @@ titulo(tituloActual)
 struct Matriz {
     let filas: Int, columnas: Int
     var parrila: [Double] // contenido de la matriz
-    
     init (filas: Int, columnas: Int) {
         self.filas = filas
         self.columnas = columnas
-        
         parrila = Array(repeating: 0.0, count: filas * columnas)
     }
 }

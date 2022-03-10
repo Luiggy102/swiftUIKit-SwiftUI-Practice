@@ -11,9 +11,6 @@
 		84803554279EE3FE0060909D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84803553279EE3FE0060909D /* ContentView.swift */; };
 		84803556279EE3FF0060909D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84803555279EE3FF0060909D /* Assets.xcassets */; };
 		84803559279EE3FF0060909D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84803558279EE3FF0060909D /* Preview Assets.xcassets */; };
-		84803563279EE3FF0060909D /* RetomandoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84803562279EE3FF0060909D /* RetomandoTests.swift */; };
-		8480356D279EE3FF0060909D /* RetomandoUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480356C279EE3FF0060909D /* RetomandoUITest.swift */; };
-		8480356F279EE3FF0060909D /* RetomandoUITestsLaunchTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480356E279EE3FF0060909D /* RetomandoUITestsLaunchTest.swift */; };
 		8480357C279EE9400060909D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480357B279EE9400060909D /* Player.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,10 +40,7 @@
 		84803555279EE3FF0060909D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84803558279EE3FF0060909D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8480355E279EE3FF0060909D /* retomandoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = retomandoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		84803562279EE3FF0060909D /* RetomandoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetomandoTests.swift; sourceTree = "<group>"; };
 		84803568279EE3FF0060909D /* retomandoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = retomandoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8480356C279EE3FF0060909D /* RetomandoUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetomandoUITest.swift; sourceTree = "<group>"; };
-		8480356E279EE3FF0060909D /* RetomandoUITestsLaunchTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetomandoUITestsLaunchTest.swift; sourceTree = "<group>"; };
 		8480357B279EE9400060909D /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		8485C27F27D8204B00076C5C /* optionalss.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = optionalss.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		84DD5E0927A9EB1B0064C370 /* funcss.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = funcss.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -80,9 +74,11 @@
 		84803545279EE3FE0060909D = {
 			isa = PBXGroup;
 			children = (
+				84803551279EE3FE0060909D /* RetomandoApp.swift */,
+				84803553279EE3FE0060909D /* ContentView.swift */,
+				8480357B279EE9400060909D /* Player.swift */,
+				84803555279EE3FF0060909D /* Assets.xcassets */,
 				84803550279EE3FE0060909D /* retomando */,
-				84803561279EE3FF0060909D /* retomandoTests */,
-				8480356B279EE3FF0060909D /* retomandoUITests */,
 				8480354F279EE3FE0060909D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,15 +96,11 @@
 		84803550279EE3FE0060909D /* retomando */ = {
 			isa = PBXGroup;
 			children = (
+				844026C527AE1A2200C6B7A0 /* objectss.playground */,
+				84DD5E0927A9EB1B0064C370 /* funcss.playground */,
 				8485C27F27D8204B00076C5C /* optionalss.playground */,
 				8469353C27D01E8200FADDB7 /* inheritance.playground */,
-				84803551279EE3FE0060909D /* RetomandoApp.swift */,
-				84803553279EE3FE0060909D /* ContentView.swift */,
-				8480357B279EE9400060909D /* Player.swift */,
-				84803555279EE3FF0060909D /* Assets.xcassets */,
 				84803557279EE3FF0060909D /* Preview Content */,
-				84DD5E0927A9EB1B0064C370 /* funcss.playground */,
-				844026C527AE1A2200C6B7A0 /* objectss.playground */,
 			);
 			path = retomando;
 			sourceTree = "<group>";
@@ -119,23 +111,6 @@
 				84803558279EE3FF0060909D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		84803561279EE3FF0060909D /* retomandoTests */ = {
-			isa = PBXGroup;
-			children = (
-				84803562279EE3FF0060909D /* RetomandoTests.swift */,
-			);
-			path = retomandoTests;
-			sourceTree = "<group>";
-		};
-		8480356B279EE3FF0060909D /* retomandoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				8480356C279EE3FF0060909D /* RetomandoUITest.swift */,
-				8480356E279EE3FF0060909D /* RetomandoUITestsLaunchTest.swift */,
-			);
-			path = retomandoUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,7 +275,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84803563279EE3FF0060909D /* RetomandoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,8 +282,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8480356F279EE3FF0060909D /* RetomandoUITestsLaunchTest.swift in Sources */,
-				8480356D279EE3FF0060909D /* RetomandoUITest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
