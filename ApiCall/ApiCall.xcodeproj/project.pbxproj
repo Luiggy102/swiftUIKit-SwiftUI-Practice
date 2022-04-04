@@ -24,6 +24,7 @@
 		844BFCA527FB2919005151F5 /* CodingKeys&DecodeableInit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "CodingKeys&DecodeableInit.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		844ECDAE27FB1E63006113AA /* JsonDecodeable2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = JsonDecodeable2.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		849746C127FB173000013277 /* JsonDecodeable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = JsonDecodeable.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		84D43E8C27FB78110049EF63 /* arrayDeconding.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = arrayDeconding.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +81,7 @@
 				844ECDAE27FB1E63006113AA /* JsonDecodeable2.playground */,
 				849746C127FB173000013277 /* JsonDecodeable.playground */,
 				844BFCA527FB2919005151F5 /* CodingKeys&DecodeableInit.playground */,
+				84D43E8C27FB78110049EF63 /* arrayDeconding.playground */,
 			);
 			path = JsonDecodeable;
 			sourceTree = "<group>";
