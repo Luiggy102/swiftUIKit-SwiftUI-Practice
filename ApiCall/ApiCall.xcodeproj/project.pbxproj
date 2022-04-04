@@ -21,6 +21,9 @@
 		8434555727F7979D0074DB10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8434555A27F7979D0074DB10 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8434556127F7BA950074DB10 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		844BFCA527FB2919005151F5 /* CodingKeys&DecodeableInit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "CodingKeys&DecodeableInit.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		844ECDAE27FB1E63006113AA /* JsonDecodeable2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = JsonDecodeable2.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		849746C127FB173000013277 /* JsonDecodeable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = JsonDecodeable.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,7 @@
 				8434555527F7979C0074DB10 /* ContentView.swift */,
 				8434556127F7BA950074DB10 /* ViewModel.swift */,
 				8434555727F7979D0074DB10 /* Assets.xcassets */,
+				844ECDAF27FB1E72006113AA /* JsonDecodeable */,
 				8434555927F7979D0074DB10 /* Preview Content */,
 			);
 			path = ApiCall;
@@ -68,6 +72,16 @@
 				8434555A27F7979D0074DB10 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		844ECDAF27FB1E72006113AA /* JsonDecodeable */ = {
+			isa = PBXGroup;
+			children = (
+				844ECDAE27FB1E63006113AA /* JsonDecodeable2.playground */,
+				849746C127FB173000013277 /* JsonDecodeable.playground */,
+				844BFCA527FB2919005151F5 /* CodingKeys&DecodeableInit.playground */,
+			);
+			path = JsonDecodeable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
