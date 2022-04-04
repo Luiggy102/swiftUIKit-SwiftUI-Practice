@@ -25,6 +25,9 @@
 		844ECDAE27FB1E63006113AA /* JsonDecodeable2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = JsonDecodeable2.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		849746C127FB173000013277 /* JsonDecodeable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = JsonDecodeable.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		84D43E8C27FB78110049EF63 /* arrayDeconding.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = arrayDeconding.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		84D43E8D27FB79B50049EF63 /* snakeCaseDecoding.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = snakeCaseDecoding.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		84D43E8E27FB7DD90049EF63 /* decodeIfPresent.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = decodeIfPresent.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		84D43E8F27FB836F0049EF63 /* nestedContainer.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = nestedContainer.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,9 @@
 				849746C127FB173000013277 /* JsonDecodeable.playground */,
 				844BFCA527FB2919005151F5 /* CodingKeys&DecodeableInit.playground */,
 				84D43E8C27FB78110049EF63 /* arrayDeconding.playground */,
+				84D43E8D27FB79B50049EF63 /* snakeCaseDecoding.playground */,
+				84D43E8E27FB7DD90049EF63 /* decodeIfPresent.playground */,
+				84D43E8F27FB836F0049EF63 /* nestedContainer.playground */,
 			);
 			path = JsonDecodeable;
 			sourceTree = "<group>";
