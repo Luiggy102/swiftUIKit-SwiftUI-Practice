@@ -19,7 +19,6 @@ struct ContentView: View {
                 Text("Crear petición HTTP")
                     .padding()
             }
-
         }
     }
 }
