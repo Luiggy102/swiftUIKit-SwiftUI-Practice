@@ -11,7 +11,7 @@ import SwiftUI
 struct propertyPrappersApp: App {
     var body: some Scene {
         WindowGroup {
-            AppStorageDemo()
+            SceneStorageFile()
         }
     }
 }

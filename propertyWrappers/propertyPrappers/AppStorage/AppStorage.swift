@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// guarda información mediante acciones 
+
 struct AppStorageDemo: View {
     // `@State` Solo persiste en memoria
     // Cada vez que se vueva a ejecutar la App la información se perderá

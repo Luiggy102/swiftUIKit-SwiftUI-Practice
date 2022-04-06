@@ -7,9 +7,27 @@
 
 import SwiftUI
 
+// Para que funcione no debemos cerrar la Aplicacion
+
 struct SceneStorageFile: View {
+    // Asi mismo necesita una llave
+    @SceneStorage("tweet") var tweet: String = ""
+    @SceneStorage("togglePostInTheBestHour") var togglePostInTheBestHour: Bool = false
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Form {
+            TextEditor(text: $tweet)
+                .frame(width: 300, height: 300)
+            Toggle("Post in the best hour", isOn: $togglePostInTheBestHour)
+                .padding()
+            HStack{
+                Spacer()
+                Button(togglePostInTheBestHour ? "Post in the best hour ☘️" : "Post now 🐥") {
+                    print("Posting...")
+                    print("Posted: \(tweet)")
+                }
+                Spacer()
+            }
+        }
     }
 }
 
