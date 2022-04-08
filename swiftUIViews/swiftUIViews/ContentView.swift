@@ -22,6 +22,7 @@ struct ContentView: View {
                 NavigationLink("Cargando o barra progreso") { progressViewExample() }
                 NavigationLink("Abrir Links(no solo en safari)") { linksExample() }
                 NavigationLink("Toggle") { toggleExample() }
+                NavigationLink("Aumentar o decrementar valores(stepper)") { stepperExample() }
             }
             .navigationTitle("Contenido Extra")
         }
