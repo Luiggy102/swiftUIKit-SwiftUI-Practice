@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		84569F8F27FF758C00495F81 /* text&SecField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84569F8E27FF758C00495F81 /* text&SecField.swift */; };
 		847EEC0F280081A100403868 /* datepickerExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847EEC0E280081A100403868 /* datepickerExample.swift */; };
+		847EEC112800881B00403868 /* colorPickerExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847EEC102800881B00403868 /* colorPickerExample.swift */; };
+		847EEC132800BD6B00403868 /* progressViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847EEC122800BD6B00403868 /* progressViewExample.swift */; };
+		847EEC152800C22900403868 /* linksExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847EEC142800C22900403868 /* linksExample.swift */; };
 		847F05BA27FF247F00175093 /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847F05B927FF247F00175093 /* Tabs.swift */; };
 		8494809B27FF165900B3D558 /* swiftUIViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8494809A27FF165900B3D558 /* swiftUIViewsApp.swift */; };
 		8494809D27FF165900B3D558 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8494809C27FF165900B3D558 /* ContentView.swift */; };
@@ -21,6 +24,9 @@
 /* Begin PBXFileReference section */
 		84569F8E27FF758C00495F81 /* text&SecField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "text&SecField.swift"; sourceTree = "<group>"; };
 		847EEC0E280081A100403868 /* datepickerExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = datepickerExample.swift; sourceTree = "<group>"; };
+		847EEC102800881B00403868 /* colorPickerExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorPickerExample.swift; sourceTree = "<group>"; };
+		847EEC122800BD6B00403868 /* progressViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = progressViewExample.swift; sourceTree = "<group>"; };
+		847EEC142800C22900403868 /* linksExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = linksExample.swift; sourceTree = "<group>"; };
 		847F05B927FF247F00175093 /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
 		8494809727FF165900B3D558 /* swiftUIViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftUIViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8494809A27FF165900B3D558 /* swiftUIViewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUIViewsApp.swift; sourceTree = "<group>"; };
@@ -63,6 +69,9 @@
 			children = (
 				8494809A27FF165900B3D558 /* swiftUIViewsApp.swift */,
 				8494809C27FF165900B3D558 /* ContentView.swift */,
+				847EEC122800BD6B00403868 /* progressViewExample.swift */,
+				847EEC142800C22900403868 /* linksExample.swift */,
+				847EEC102800881B00403868 /* colorPickerExample.swift */,
 				847EEC0E280081A100403868 /* datepickerExample.swift */,
 				849C792A2800774600822511 /* TextEditor.swift */,
 				84569F8E27FF758C00495F81 /* text&SecField.swift */,
@@ -156,6 +165,9 @@
 				849C792B2800774600822511 /* TextEditor.swift in Sources */,
 				847EEC0F280081A100403868 /* datepickerExample.swift in Sources */,
 				8494809D27FF165900B3D558 /* ContentView.swift in Sources */,
+				847EEC152800C22900403868 /* linksExample.swift in Sources */,
+				847EEC132800BD6B00403868 /* progressViewExample.swift in Sources */,
+				847EEC112800881B00403868 /* colorPickerExample.swift in Sources */,
 				8494809B27FF165900B3D558 /* swiftUIViewsApp.swift in Sources */,
 				847F05BA27FF247F00175093 /* Tabs.swift in Sources */,
 				84569F8F27FF758C00495F81 /* text&SecField.swift in Sources */,

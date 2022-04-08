@@ -16,6 +16,9 @@ struct ContentView: View {
                 NavigationLink("Ejemplo Inicio Sesión(textField)") { text_SecField() }
                 NavigationLink("Text Editor") { textEditorExample() }
                 NavigationLink("Seleccionar Fechas") { datepickerExample() }
+                NavigationLink("Selecionar Colores") { colorPickerExample() }
+                NavigationLink("Cargando o barra progreso") { progressViewExample() }
+                NavigationLink("Abrir Links(no solo en safari)") { linksExample() }
             }
             .navigationTitle("Contenido Extra")
         }
