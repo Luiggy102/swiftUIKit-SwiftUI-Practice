@@ -7,10 +7,12 @@
 
 import SwiftUI
 
+
+
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            List {
+            Form {
                 NavigationLink("Modificadores de Texto") { textModifiers() }
                 NavigationLink("Ejemplo de tutorial de App(tab view)") { Tabs() }
                 NavigationLink("Ejemplo Inicio Sesión(textField)") { text_SecField() }
@@ -19,6 +21,7 @@ struct ContentView: View {
                 NavigationLink("Selecionar Colores") { colorPickerExample() }
                 NavigationLink("Cargando o barra progreso") { progressViewExample() }
                 NavigationLink("Abrir Links(no solo en safari)") { linksExample() }
+                NavigationLink("Toggle") { toggleExample() }
             }
             .navigationTitle("Contenido Extra")
         }
