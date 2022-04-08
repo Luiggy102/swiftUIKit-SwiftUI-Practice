@@ -15,6 +15,7 @@ struct ContentView: View {
                 NavigationLink("Ejemplo de tutorial de App(tab view)") { Tabs() }
                 NavigationLink("Ejemplo Inicio Sesión(textField)") { text_SecField() }
                 NavigationLink("Text Editor") { textEditorExample() }
+                NavigationLink("Seleccionar Fechas") { datepickerExample() }
             }
             .navigationTitle("Contenido Extra")
         }

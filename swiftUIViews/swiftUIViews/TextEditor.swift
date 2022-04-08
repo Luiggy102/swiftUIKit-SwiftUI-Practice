@@ -13,9 +13,6 @@ struct textEditorExample: View {
     var body: some View {
         VStack {
             VStack (alignment: .leading){
-                Text("Ejemplo de tweet")
-                    .font(.largeTitle)
-                    .padding()
                 Text("Al momento de que pase 280 caractéres se pasará a rojo el número")
                 TextEditor(text: $textInTextEditor)
                     .font(.headline)
@@ -33,6 +30,8 @@ struct textEditorExample: View {
                     .foregroundColor(counter <= 280 ? .green : .red)
                     .font(.subheadline)
             }
+            .navigationTitle("Ejemplo De Tweet")
+            .navigationBarTitleDisplayMode(.inline)
         }.padding()
     }
 }
