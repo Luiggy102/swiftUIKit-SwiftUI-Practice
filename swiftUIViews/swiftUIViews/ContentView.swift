@@ -11,10 +11,10 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                NavigationLink("Modificadores de Texto",
-                               destination: textModifiers())
-                NavigationLink("Ejemplo de tutorial de App(tab view)",
-                               destination: Tabs())
+                NavigationLink("Modificadores de Texto") { textModifiers() }
+                NavigationLink("Ejemplo de tutorial de App(tab view)") { Tabs() }
+                NavigationLink("Ejemplo Inicio Sesión(textField)") { text_SecField() }
+                NavigationLink("Text Editor") { textEditorExample() }
             }
             .navigationTitle("Contenido Extra")
         }
