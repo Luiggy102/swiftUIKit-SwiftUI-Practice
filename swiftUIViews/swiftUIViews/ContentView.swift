@@ -26,6 +26,7 @@ struct ContentView: View {
                     NavigationLink("Aumentar o decrementar valores(stepper)") { stepperExample() }
                     NavigationLink("slider") { sliderExample() }
                     NavigationLink("Matriz/Grilla (lazy grid)") { gridViewExample() }
+                    NavigationLink("Form/ formularios") { formExample() }
                 }
             }
             .navigationTitle("Contenido Extra")
