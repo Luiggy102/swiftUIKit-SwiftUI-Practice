@@ -31,6 +31,7 @@ struct ContentView: View {
                     NavigationLink("Form/ formularios") { formExample() }
                     NavigationLink("Listas (tambien se enrollan") { listExample() }
                     NavigationLink("Vistan que aparenen(sheet,fullscreen cover)") { sheetExample() }
+                    NavigationLink("Mandar alertas") { alertExample() }
                 }
             }
             .navigationTitle("Contenido Extra")

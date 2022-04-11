@@ -26,6 +26,7 @@
 		849480AB27FF194C00B3D558 /* textModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849480AA27FF194C00B3D558 /* textModifiers.swift */; };
 		849C792B2800774600822511 /* TextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C792A2800774600822511 /* TextEditor.swift */; };
 		84A2244E28047B81002424D6 /* sheetExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2244D28047B81002424D6 /* sheetExample.swift */; };
+		84CB7D812804BC5800B9C3FC /* alertExample().swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB7D802804BC5800B9C3FC /* alertExample().swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		849480AA27FF194C00B3D558 /* textModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textModifiers.swift; sourceTree = "<group>"; };
 		849C792A2800774600822511 /* TextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditor.swift; sourceTree = "<group>"; };
 		84A2244D28047B81002424D6 /* sheetExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sheetExample.swift; sourceTree = "<group>"; };
+		84CB7D802804BC5800B9C3FC /* alertExample().swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "alertExample().swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				8494809A27FF165900B3D558 /* swiftUIViewsApp.swift */,
 				8494809C27FF165900B3D558 /* ContentView.swift */,
+				84CB7D802804BC5800B9C3FC /* alertExample().swift */,
 				84A2244D28047B81002424D6 /* sheetExample.swift */,
 				848110502804581300BB9E98 /* listExample.swift */,
 				8490E8D92801D7C900B7A3B6 /* formExample.swift */,
@@ -184,6 +187,7 @@
 			files = (
 				847EEC172800C7A500403868 /* toggleExample.swift in Sources */,
 				849480AB27FF194C00B3D558 /* textModifiers.swift in Sources */,
+				84CB7D812804BC5800B9C3FC /* alertExample().swift in Sources */,
 				847EEC192800C93800403868 /* stepperExample.swift in Sources */,
 				849C792B2800774600822511 /* TextEditor.swift in Sources */,
 				848110512804581300BB9E98 /* listExample.swift in Sources */,
