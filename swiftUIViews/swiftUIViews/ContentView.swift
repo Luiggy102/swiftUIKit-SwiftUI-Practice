@@ -13,20 +13,23 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             Form {
-                NavigationLink("Modificadores de Texto") { textModifiers() }
-                NavigationLink("Ejemplo de tutorial de App(tab view)") { Tabs() }
-                NavigationLink("Ejemplo Inicio Sesión(textField)") { text_SecField() }
-                NavigationLink("Text Editor") { textEditorExample() }
-                NavigationLink("Seleccionar Fechas") { datepickerExample() }
-                NavigationLink("Selecionar Colores") { colorPickerExample() }
-                NavigationLink("Cargando o barra progreso") { progressViewExample() }
-                NavigationLink("Abrir Links(no solo en safari)") { linksExample() }
-                NavigationLink("Toggle") { toggleExample() }
-                VStack {
+                Section {
+                    NavigationLink("Modificadores de Texto") { textModifiers() }
+                    NavigationLink("Ejemplo de tutorial de App(tab view)") { Tabs() }
+                    NavigationLink("Ejemplo Inicio Sesión(textField)") { text_SecField() }
+                    NavigationLink("Text Editor") { textEditorExample() }
+                    NavigationLink("Seleccionar Fechas") { datepickerExample() }
+                    NavigationLink("Selecionar Colores") { colorPickerExample() }
+                    NavigationLink("Cargando o barra progreso") { progressViewExample() }
+                    NavigationLink("Abrir Links(no solo en safari)") { linksExample() }
+                    NavigationLink("Toggle") { toggleExample() }
+                }
+                Section {
                     NavigationLink("Aumentar o decrementar valores(stepper)") { stepperExample() }
                     NavigationLink("slider") { sliderExample() }
                     NavigationLink("Matriz/Grilla (lazy grid)") { gridViewExample() }
                     NavigationLink("Form/ formularios") { formExample() }
+                    NavigationLink("Listas (tambien se enrollan") { listExample() }
                 }
             }
             .navigationTitle("Contenido Extra")
