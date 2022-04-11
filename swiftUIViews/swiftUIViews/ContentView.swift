@@ -32,6 +32,7 @@ struct ContentView: View {
                     NavigationLink("Listas (tambien se enrollan") { listExample() }
                     NavigationLink("Vistan que aparenen(sheet,fullscreen cover)") { sheetExample() }
                     NavigationLink("Mandar alertas") { alertExample() }
+                    NavigationLink("Mandar opciones desde abajo") { actionSheetExample() }
                 }
             }
             .navigationTitle("Contenido Extra")

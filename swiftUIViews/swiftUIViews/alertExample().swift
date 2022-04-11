@@ -15,15 +15,15 @@ struct alertExample: View {
             Button("puse para mandar un alerta") {
                 isPresented = true
             }
-        }.alert("Alto ahí Basado!", isPresented: $isPresented) {
-            Button("Sí") {
+        }.alert("Alerta", isPresented: $isPresented) {
+            Button("Continuar") {
                 //
             }
-            Button("Sí") {
+            Button("Cancelar") {
                 //
             }
         } message: {
-            Text("Odias Francia?")
+            Text("Deseas continuar?")
         }
     }
 }
