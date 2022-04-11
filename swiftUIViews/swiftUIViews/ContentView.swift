@@ -30,9 +30,15 @@ struct ContentView: View {
                     NavigationLink("Matriz/Grilla (lazy grid)") { gridViewExample() }
                     NavigationLink("Form/ formularios") { formExample() }
                     NavigationLink("Listas (tambien se enrollan") { listExample() }
+                    NavigationLink("Vistan que aparenen(sheet,fullscreen cover)") { sheetExample() }
                 }
             }
             .navigationTitle("Contenido Extra")
+            .toolbar(content: {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("Done"){ print("Button tapped") }
+                }
+            })
         }
     }
 }
