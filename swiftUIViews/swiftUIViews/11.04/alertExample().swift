@@ -12,7 +12,7 @@ struct alertExample: View {
     var body: some View {
         VStack {
             Text("esto es un alerta")
-            Button("puse para mandar un alerta") {
+            Button("pulse para mandar un alerta") {
                 isPresented = true
             }
         }.alert("Alerta", isPresented: $isPresented) {

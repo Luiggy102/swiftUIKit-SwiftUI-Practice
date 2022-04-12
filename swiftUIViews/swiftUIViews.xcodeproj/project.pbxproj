@@ -72,6 +72,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84081EA12805D7E400E1E8A0 /* 08.04 (1) */ = {
+			isa = PBXGroup;
+			children = (
+				849480AA27FF194C00B3D558 /* textModifiers.swift */,
+				847F05B927FF247F00175093 /* Tabs.swift */,
+				84569F8E27FF758C00495F81 /* text&SecField.swift */,
+				849C792A2800774600822511 /* TextEditor.swift */,
+				847EEC0E280081A100403868 /* datepickerExample.swift */,
+			);
+			path = "08.04 (1)";
+			sourceTree = "<group>";
+		};
+		84081EA22805D81300E1E8A0 /* 08.04 (2) */ = {
+			isa = PBXGroup;
+			children = (
+				847EEC102800881B00403868 /* colorPickerExample.swift */,
+				847EEC122800BD6B00403868 /* progressViewExample.swift */,
+				847EEC142800C22900403868 /* linksExample.swift */,
+				847EEC162800C7A500403868 /* toggleExample.swift */,
+				847EEC182800C93800403868 /* stepperExample.swift */,
+				847EEC1A2800CEE200403868 /* sliderExample.swift */,
+			);
+			path = "08.04 (2)";
+			sourceTree = "<group>";
+		};
+		84081EA32805D85300E1E8A0 /* 09.04 */ = {
+			isa = PBXGroup;
+			children = (
+				8490E8D72801CD0900B7A3B6 /* gridViewExample.swift */,
+				8490E8D92801D7C900B7A3B6 /* formExample.swift */,
+			);
+			path = 09.04;
+			sourceTree = "<group>";
+		};
+		84081EA42805D86A00E1E8A0 /* 11.04 */ = {
+			isa = PBXGroup;
+			children = (
+				848110502804581300BB9E98 /* listExample.swift */,
+				84A2244D28047B81002424D6 /* sheetExample.swift */,
+				84CB7D802804BC5800B9C3FC /* alertExample().swift */,
+				84CB7D822804D84200B9C3FC /* actionSheetExample.swift */,
+			);
+			path = 11.04;
+			sourceTree = "<group>";
+		};
+		84081EA52805D88D00E1E8A0 /* 12.04 */ = {
+			isa = PBXGroup;
+			children = (
+				848CE9902805BF8600687465 /* contextMenuExample.swift */,
+				848CE9922805C45E00687465 /* tapGestureExample.swift */,
+				84081E9F2805D11200E1E8A0 /* dragGestureExample.swift */,
+			);
+			path = 12.04;
+			sourceTree = "<group>";
+		};
 		8494808E27FF165900B3D558 = {
 			isa = PBXGroup;
 			children = (
@@ -93,26 +148,11 @@
 			children = (
 				8494809A27FF165900B3D558 /* swiftUIViewsApp.swift */,
 				8494809C27FF165900B3D558 /* ContentView.swift */,
-				84081E9F2805D11200E1E8A0 /* dragGestureExample.swift */,
-				848CE9922805C45E00687465 /* tapGestureExample.swift */,
-				848CE9902805BF8600687465 /* contextMenuExample.swift */,
-				84CB7D822804D84200B9C3FC /* actionSheetExample.swift */,
-				84CB7D802804BC5800B9C3FC /* alertExample().swift */,
-				84A2244D28047B81002424D6 /* sheetExample.swift */,
-				848110502804581300BB9E98 /* listExample.swift */,
-				8490E8D92801D7C900B7A3B6 /* formExample.swift */,
-				8490E8D72801CD0900B7A3B6 /* gridViewExample.swift */,
-				847EEC1A2800CEE200403868 /* sliderExample.swift */,
-				847EEC182800C93800403868 /* stepperExample.swift */,
-				847EEC162800C7A500403868 /* toggleExample.swift */,
-				847EEC122800BD6B00403868 /* progressViewExample.swift */,
-				847EEC142800C22900403868 /* linksExample.swift */,
-				847EEC102800881B00403868 /* colorPickerExample.swift */,
-				847EEC0E280081A100403868 /* datepickerExample.swift */,
-				849C792A2800774600822511 /* TextEditor.swift */,
-				84569F8E27FF758C00495F81 /* text&SecField.swift */,
-				847F05B927FF247F00175093 /* Tabs.swift */,
-				849480AA27FF194C00B3D558 /* textModifiers.swift */,
+				84081EA52805D88D00E1E8A0 /* 12.04 */,
+				84081EA42805D86A00E1E8A0 /* 11.04 */,
+				84081EA32805D85300E1E8A0 /* 09.04 */,
+				84081EA22805D81300E1E8A0 /* 08.04 (2) */,
+				84081EA12805D7E400E1E8A0 /* 08.04 (1) */,
 				8494809E27FF165C00B3D558 /* Assets.xcassets */,
 				849480A027FF165C00B3D558 /* Preview Content */,
 			);

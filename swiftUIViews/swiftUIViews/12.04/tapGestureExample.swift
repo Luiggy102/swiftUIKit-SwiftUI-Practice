@@ -48,7 +48,7 @@ Podemos pasarle el número de veces que el user debe pulsar la vista antes de qu
                         .foregroundColor(rectangleTapped2 == 0 ? Color.red : Color.blue)
                         .onTapGesture(count: 1) {
                             rectangleTapped2 += 1
-                            print("Rectangulo tocado 3 veces")
+                            print("Rectangulo tocado 1 vece(s)")
                         }
                     Text("# de veces\n tocado: ")
                     + Text("\(rectangleTapped2)")
