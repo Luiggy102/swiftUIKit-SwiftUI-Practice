@@ -9,7 +9,7 @@ import SwiftUI
 
 struct contextMenuExample: View {
     var body: some View {
-        Text("Toca para abrir el menu")
+        Text("Manten tocado para abrir el menu")
             .padding()
             .contextMenu {
                 Button("Botón Ejemplo"){ }
