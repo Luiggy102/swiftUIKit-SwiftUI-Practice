@@ -33,6 +33,7 @@ struct ContentView: View {
                     NavigationLink("Vistan que aparenen(sheet,fullscreen cover)") { sheetExample() }
                     NavigationLink("Mandar alertas") { alertExample() }
                     NavigationLink("Mandar opciones desde abajo") { actionSheetExample() }
+                    NavigationLink("Como 3D touch(context Menu") { contextMenuExample() }
                 }
             }
             .navigationTitle("Contenido Extra")

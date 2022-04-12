@@ -17,6 +17,7 @@
 		847EEC1B2800CEE200403868 /* sliderExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847EEC1A2800CEE200403868 /* sliderExample.swift */; };
 		847F05BA27FF247F00175093 /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847F05B927FF247F00175093 /* Tabs.swift */; };
 		848110512804581300BB9E98 /* listExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848110502804581300BB9E98 /* listExample.swift */; };
+		848CE9912805BF8600687465 /* contextMenuExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848CE9902805BF8600687465 /* contextMenuExample.swift */; };
 		8490E8D82801CD0900B7A3B6 /* gridViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490E8D72801CD0900B7A3B6 /* gridViewExample.swift */; };
 		8490E8DA2801D7C900B7A3B6 /* formExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490E8D92801D7C900B7A3B6 /* formExample.swift */; };
 		8494809B27FF165900B3D558 /* swiftUIViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8494809A27FF165900B3D558 /* swiftUIViewsApp.swift */; };
@@ -41,6 +42,7 @@
 		847EEC1A2800CEE200403868 /* sliderExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sliderExample.swift; sourceTree = "<group>"; };
 		847F05B927FF247F00175093 /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
 		848110502804581300BB9E98 /* listExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listExample.swift; sourceTree = "<group>"; };
+		848CE9902805BF8600687465 /* contextMenuExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contextMenuExample.swift; sourceTree = "<group>"; };
 		8490E8D72801CD0900B7A3B6 /* gridViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gridViewExample.swift; sourceTree = "<group>"; };
 		8490E8D92801D7C900B7A3B6 /* formExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = formExample.swift; sourceTree = "<group>"; };
 		8494809727FF165900B3D558 /* swiftUIViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftUIViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +89,7 @@
 			children = (
 				8494809A27FF165900B3D558 /* swiftUIViewsApp.swift */,
 				8494809C27FF165900B3D558 /* ContentView.swift */,
+				848CE9902805BF8600687465 /* contextMenuExample.swift */,
 				84CB7D822804D84200B9C3FC /* actionSheetExample.swift */,
 				84CB7D802804BC5800B9C3FC /* alertExample().swift */,
 				84A2244D28047B81002424D6 /* sheetExample.swift */,
@@ -189,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				847EEC172800C7A500403868 /* toggleExample.swift in Sources */,
+				848CE9912805BF8600687465 /* contextMenuExample.swift in Sources */,
 				849480AB27FF194C00B3D558 /* textModifiers.swift in Sources */,
 				84CB7D812804BC5800B9C3FC /* alertExample().swift in Sources */,
 				847EEC192800C93800403868 /* stepperExample.swift in Sources */,
