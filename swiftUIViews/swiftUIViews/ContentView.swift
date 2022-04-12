@@ -12,12 +12,18 @@ struct ContentView: View {
         NavigationView {
             Form {
                 Section {
+                    NavigationLink("swipeActions: desliza para haer algo y\nrefreshable: pull to referesh ")
+                    { swipeActions_y_refreshable() }
+                } header: {
+                    Text("12.04 (2)")
+                }
+                Section {
                     NavigationLink("Como 3D touch (context Menu)") { contextMenuExample() }
                     NavigationLink("Acciones al tocar una vista (tap gesture)")
                     { tapGestureExample() }
                     NavigationLink("Mover vistas por la pantalla con animación 🥵🙌") { dragGestureExample() }
                 } header: {
-                    Text("12.04")
+                    Text("12.04 (1)")
                 }
                 Section {
                     NavigationLink("Listas (tambien se enrollan)") { listExample() }
@@ -56,7 +62,7 @@ struct ContentView: View {
             .navigationTitle("Contenido Extra")
             .toolbar(content: {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("Listo"){ print("Button tapped") }
+                    Button("Listo"){ print("Todo listo") }
                 }
             })
         }
