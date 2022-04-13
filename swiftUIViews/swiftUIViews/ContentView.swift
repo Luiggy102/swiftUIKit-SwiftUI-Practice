@@ -12,6 +12,7 @@ struct ContentView: View {
         NavigationView {
             Form {
                 Section {
+                    NavigationLink("Crear propios modificadores") { viewModifiersExample() }
                     NavigationLink("Geometry Reader/ Geometry proxy (hacer diseño personalizado para muchas pantallas y animaciones)") { geometryReaderExample() }
                 } header: {
                     Text("13.04")

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		84081EA02805D11200E1E8A0 /* dragGestureExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84081E9F2805D11200E1E8A0 /* dragGestureExample.swift */; };
+		8429518F2807258C00628A9A /* viewModifiersExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8429518E2807258C00628A9A /* viewModifiersExample.swift */; };
 		84569F8F27FF758C00495F81 /* text&SecField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84569F8E27FF758C00495F81 /* text&SecField.swift */; };
 		847EEC0F280081A100403868 /* datepickerExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847EEC0E280081A100403868 /* datepickerExample.swift */; };
 		847EEC112800881B00403868 /* colorPickerExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847EEC102800881B00403868 /* colorPickerExample.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		84081E9F2805D11200E1E8A0 /* dragGestureExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dragGestureExample.swift; sourceTree = "<group>"; };
+		8429518E2807258C00628A9A /* viewModifiersExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewModifiersExample.swift; sourceTree = "<group>"; };
 		84569F8E27FF758C00495F81 /* text&SecField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "text&SecField.swift"; sourceTree = "<group>"; };
 		847EEC0E280081A100403868 /* datepickerExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = datepickerExample.swift; sourceTree = "<group>"; };
 		847EEC102800881B00403868 /* colorPickerExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorPickerExample.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 		8491B3242806194C00DB8228 /* 13.04 */ = {
 			isa = PBXGroup;
 			children = (
+				8429518E2807258C00628A9A /* viewModifiersExample.swift */,
 				8491E697280717BA006221A6 /* GeomemetryExamples */,
 			);
 			path = 13.04;
@@ -279,6 +282,7 @@
 				84CB7D832804D84200B9C3FC /* actionSheetExample.swift in Sources */,
 				847EEC132800BD6B00403868 /* progressViewExample.swift in Sources */,
 				847EEC112800881B00403868 /* colorPickerExample.swift in Sources */,
+				8429518F2807258C00628A9A /* viewModifiersExample.swift in Sources */,
 				8491E69B2807192F006221A6 /* geometryReaderScrollView.swift in Sources */,
 				8490E8D82801CD0900B7A3B6 /* gridViewExample.swift in Sources */,
 				8490E8DA2801D7C900B7A3B6 /* formExample.swift in Sources */,
