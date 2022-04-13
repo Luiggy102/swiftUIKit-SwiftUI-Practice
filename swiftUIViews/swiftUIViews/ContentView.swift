@@ -12,18 +12,19 @@ struct ContentView: View {
         NavigationView {
             Form {
                 Section {
-                    NavigationLink("swipeActions: desliza para haer algo y\nrefreshable: pull to referesh ")
-                    { swipeActions_y_refreshable() }
+                    NavigationLink("Geometry Reader/ Geometry proxy (hacer diseño personalizado para muchas pantallas y animaciones)") { geometryReaderExample() }
                 } header: {
-                    Text("12.04 (2)")
+                    Text("13.04")
                 }
                 Section {
                     NavigationLink("Como 3D touch (context Menu)") { contextMenuExample() }
                     NavigationLink("Acciones al tocar una vista (tap gesture)")
                     { tapGestureExample() }
                     NavigationLink("Mover vistas por la pantalla con animación 🥵🙌") { dragGestureExample() }
+                    NavigationLink("swipeActions: desliza para haer algo y\nrefreshable: pull to referesh ")
+                    { swipeActions_y_refreshable() }
                 } header: {
-                    Text("12.04 (1)")
+                    Text("12.04")
                 }
                 Section {
                     NavigationLink("Listas (tambien se enrollan)") { listExample() }
