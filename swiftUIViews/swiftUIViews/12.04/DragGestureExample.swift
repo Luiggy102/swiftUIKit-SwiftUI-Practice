@@ -9,12 +9,10 @@ import SwiftUI
 
 // Este es más complejo
 
-struct dragGestureExample: View {
-    
+struct DragGestureExample: View {
 // 1.- Hay que hacer una variable que tenga las coordenadas
 // dicha variable tiene que ser `CGSize` es una structura que contiene ancho y largo
 // `dragOffset` = `despalzamientoPorArrastre`
-    
     // .zero es para que este en la posición inicial de swiftUI
     // x: 0, y: 0
     @State var desplazamientoPorArrastre: CGSize = .zero
@@ -44,8 +42,8 @@ struct dragGestureExample: View {
     }
 }
 
-struct dragGestureExample_Previews: PreviewProvider {
+struct DragGestureExample_Previews: PreviewProvider {
     static var previews: some View {
-        dragGestureExample()
+        DragGestureExample()
     }
 }

@@ -15,7 +15,7 @@ struct Device { // struct de datos
     let title, imageName: String
 }
 
-struct listExample: View    {
+struct ListExample: View {
     let house = [ // Colección de datos
         Device(title: "Laptop", imageName: "laptopcomputer"),
         Device(title: "Mac mini", imageName: "macmini"),
@@ -47,8 +47,8 @@ struct listExample: View    {
     }
 }
 
-struct listExample_Previews: PreviewProvider {
+struct ListExample_Previews: PreviewProvider {
     static var previews: some View {
-        listExample()
+        ListExample()
     }
 }

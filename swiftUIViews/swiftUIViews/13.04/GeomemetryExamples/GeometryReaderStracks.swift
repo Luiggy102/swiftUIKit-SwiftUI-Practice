@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct geometryReaderStracks: View {
+struct GeometryReaderStracks: View {
     var body: some View {
         // Esto se adapta a todas la pantallas
         VStack {
@@ -39,8 +39,8 @@ struct geometryReaderStracks: View {
     }
 }
 
-struct geometryReaderStracks_Previews: PreviewProvider {
+struct GeometryReaderStracks_Previews: PreviewProvider {
     static var previews: some View {
-        geometryReaderStracks()
+        GeometryReaderStracks()
     }
 }

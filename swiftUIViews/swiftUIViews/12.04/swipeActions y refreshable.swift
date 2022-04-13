@@ -10,7 +10,7 @@ import SwiftUI
 // El modelo
 struct Dispositivo { let name, systemImage: String }
 
-struct swipeActions_y_refreshable: View {
+struct SwipeActionsRefreshable: View {
     // Hacer un array de devices
     var arrayOfDispositivos = [
         Dispositivo(name: "iphone", systemImage: "iphone"),
@@ -59,8 +59,8 @@ struct swipeActions_y_refreshable: View {
 //    }
 }
 
-struct swipeActions_y_refreshable_Previews: PreviewProvider {
+struct SwipeActionsRefreshablePreviews: PreviewProvider {
     static var previews: some View {
-        swipeActions_y_refreshable()
+        SwipeActionsRefreshable()
     }
 }

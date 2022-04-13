@@ -7,21 +7,19 @@
 
 import SwiftUI
 
-struct formExample: View {
+struct FormExample: View {
     @State var isNetworkOn: Bool = false
     @State var name: String = "iPhone 12 Pro Max"
     @State var favoriteColor: Color = Color.blue
     @State var birthday: Date = Date()
     @State var numDevices: Float = 1.0
     @State var contactMessage: String = ""
-    
     var body: some View {
         Form {
             Section(header: Text("Settings")) {
                 TextField("Device Name", text: $name)
                 Toggle("Wi-Fi", isOn: $isNetworkOn)
             }
-            
             Section(header: Text("Account")) {
                 DatePicker("Birthday",
                            selection: $birthday)
@@ -30,7 +28,6 @@ struct formExample: View {
                 Stepper("Number of devices: \(Int(numDevices))",
                         value: $numDevices)
             }
-            
             Section(header: Text("Contact"),
                     footer:
                         HStack {
@@ -51,8 +48,8 @@ struct formExample: View {
     }
 }
 
-struct formExample_Previews: PreviewProvider {
+struct FormExample_Previews: PreviewProvider {
     static var previews: some View {
-        formExample()
+        FormExample()
     }
 }

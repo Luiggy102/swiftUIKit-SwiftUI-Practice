@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct tapGestureExample: View {
+struct TapGestureExample: View {
     @State var rectangleTapped1: Int = 0
     @State var rectangleTapped2: Int = 0
     var body: some View {
@@ -19,7 +19,8 @@ struct tapGestureExample: View {
             Text(
  """
 Ejecutar alguna acción cuando un user pulse la vista.
-Podemos pasarle el número de veces que el user debe pulsar la vista antes de que se realice la acción que tenemos en el .onEnded
+Podemos pasarle el número de veces que el user debe pulsar la vista
+antes de que se realice la acción que tenemos en el .onEnded
 """
             ).padding()
             HStack {
@@ -60,8 +61,8 @@ Podemos pasarle el número de veces que el user debe pulsar la vista antes de qu
     }
 }
 
-struct tapGestureExample_Previews: PreviewProvider {
+struct TapGestureExample_Previews: PreviewProvider {
     static var previews: some View {
-        tapGestureExample()
+        TapGestureExample()
     }
 }

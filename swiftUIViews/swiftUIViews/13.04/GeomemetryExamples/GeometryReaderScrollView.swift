@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct geometryReaderScrollView: View {
+struct GeometryReaderScrollView: View {
     let arrayOfNames = ["Aprende SwiftUI",
                         "Aprende Swift",
                         "Aprende Xcode",
@@ -45,8 +45,8 @@ struct geometryReaderScrollView: View {
     }
 }
 
-struct geometryReaderScrollView_Previews: PreviewProvider {
+struct GeometryReaderScrollView_Previews: PreviewProvider {
     static var previews: some View {
-        geometryReaderScrollView()
+        GeometryReaderScrollView()
     }
 }

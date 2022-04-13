@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct colorPickerExample: View {
+struct ColorPickerExample: View {
     @State var color: Color = .blue
     var body: some View {
         VStack(alignment: .leading) {
@@ -22,8 +22,8 @@ struct colorPickerExample: View {
     }
 }
 
-struct colorPickerExample_Previews: PreviewProvider {
+struct ColorPickerExample_Previews: PreviewProvider {
     static var previews: some View {
-        colorPickerExample()
+        ColorPickerExample()
     }
 }

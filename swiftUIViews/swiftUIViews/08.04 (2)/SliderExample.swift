@@ -7,10 +7,9 @@
 
 import SwiftUI
 
-struct sliderExample: View {
+struct SliderExample: View {
     @State var iPhoneCounter: Float = 5.0
     @State var isEditing: Bool = false
-    
     var body: some View {
         Form {
             Slider(value: $iPhoneCounter,
@@ -25,8 +24,8 @@ struct sliderExample: View {
     }
 }
 
-struct sliderExample_Previews: PreviewProvider {
+struct SliderExample_Previews: PreviewProvider {
     static var previews: some View {
-        sliderExample()
+        SliderExample()
     }
 }

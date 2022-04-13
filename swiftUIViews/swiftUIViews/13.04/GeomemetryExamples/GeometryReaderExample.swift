@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct geometryReaderExample: View {
+struct GeometryReaderExample: View {
     var body: some View {
        // representanteGeometria o proxy
         // es un parametro que nos da info del GeometryReader en si
@@ -28,22 +28,30 @@ struct geometryReaderExample: View {
                         .padding()
                         .foregroundColor(.white)
                 }
-                Text("Coordenadas locales:\n \(representanteGeometria.frame(in: .local).debugDescription) \n \n (frame del GR, la vista padre)")
+                Text(
+"""
+Coordenadas locales:
+\n \(representanteGeometria.frame(in: .local).debugDescription) \n \n (frame del GR, la vista padre)
+""")
                         .background(Color.blue)
                         .padding()
                         .foregroundColor(.white)
-                Text("Coordenadas Globales:\n \(representanteGeometria.frame(in: .global).debugDescription) \n \n (frame de toda la pantalla del dispositivo)")
+                Text(
+"""
+Coordenadas Globales:
+\n \(representanteGeometria.frame(in: .global).debugDescription) \n \n (frame toda la pantalla del dispositivo)
+""")
                         .background(Color.blue)
                         .padding()
                         .foregroundColor(.white)
-                NavigationLink(destination: geometryReaderStracks()) {
+                NavigationLink(destination: GeometryReaderStracks()) {
                     Text("Custom Layout")
                         .padding()
                         .background(Color.black)
                         .foregroundColor(.white)
                         .cornerRadius(10)
                 }
-                NavigationLink(destination: geometryReaderScrollView()) {
+                NavigationLink(destination: GeometryReaderScrollView()) {
                     Text("Animaciones (Scroll View)")
                         .padding()
                         .background(Color.black)
@@ -58,8 +66,8 @@ struct geometryReaderExample: View {
     }
 }
 
-struct geometryReaderExample_Previews: PreviewProvider {
+struct GeometryReaderExample_Previews: PreviewProvider {
     static var previews: some View {
-        geometryReaderExample()
+        GeometryReaderExample()
     }
 }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct alertExample: View {
+struct AlertExample: View {
     @State var isPresented: Bool = false
     var body: some View {
         VStack {
@@ -28,8 +28,8 @@ struct alertExample: View {
     }
 }
 
-struct alertExample___Previews: PreviewProvider {
+struct AlertExamplePreviews: PreviewProvider {
     static var previews: some View {
-        alertExample()
+        AlertExample()
     }
 }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct text_SecField: View {
+struct TextSecField: View {
     @State var username: String = ""
     @State var password: String = ""
     var body: some View {
@@ -44,8 +44,8 @@ struct text_SecField: View {
     }
 }
 
-struct text_SecField_Previews: PreviewProvider {
+struct TextSecFieldPreviews: PreviewProvider {
     static var previews: some View {
-        text_SecField()
+        TextSecField()
     }
 }

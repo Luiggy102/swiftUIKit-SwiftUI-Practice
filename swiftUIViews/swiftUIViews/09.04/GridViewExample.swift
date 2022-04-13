@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct gridViewExample: View {
+struct GridViewExample: View {
     let elements: ClosedRange = 1...500
                                         // fixed = fijo, ancho de 100
     let gridItems: [GridItem] = [GridItem(.fixed(100)),
@@ -31,8 +31,8 @@ struct gridViewExample: View {
     }
 }
 
-struct gridViewExample_Previews: PreviewProvider {
+struct GridViewExample_Previews: PreviewProvider {
     static var previews: some View {
-        gridViewExample()
+        GridViewExample()
     }
 }

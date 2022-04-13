@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct stepperExample: View {
+struct StepperExample: View {
     @State var iPhoneCounter: Int = 1
     @State var threeStepCounter: Int = 1
     @State var printedValue: Int = 1
@@ -19,7 +19,7 @@ struct stepperExample: View {
             Stepper("Contador de 3 en 3: \(threeStepCounter)", value: $threeStepCounter, in: 1...30, step: 3)
             Stepper("Printar valores") {
                 printedValue += 1
-                print("aumentar: ",printedValue)
+                print("aumentar: ", printedValue)
             } onDecrement: {
                 printedValue -= 1
                 print("decrementar: \(printedValue)")
@@ -29,8 +29,8 @@ struct stepperExample: View {
     }
 }
 
-struct stepperExample_Previews: PreviewProvider {
+struct StepperExample_Previews: PreviewProvider {
     static var previews: some View {
-        stepperExample()
+        StepperExample()
     }
 }

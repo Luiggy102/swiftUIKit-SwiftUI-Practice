@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct sheetExample: View {
+struct SheetExample: View {
     @State var isPresentedFullScreen: Bool = false
     @State var isPresentedSheet: Bool = false
     var body: some View {
         VStack {
-            Button("Botón para FullScreenCover"){ isPresentedFullScreen = true }.padding()
-            Button("Botón para sheet"){ isPresentedSheet = true }.padding()
+            Button("Botón para FullScreenCover") { isPresentedFullScreen = true }.padding()
+            Button("Botón para sheet") { isPresentedSheet = true }.padding()
         }.fullScreenCover(isPresented: $isPresentedFullScreen,
                           onDismiss: { isPresentedFullScreen = false },
                           content: {
@@ -33,8 +33,8 @@ struct sheetExample: View {
     }
 }
 
-struct sheetExample_Previews: PreviewProvider {
+struct SheetExample_Previews: PreviewProvider {
     static var previews: some View {
-        sheetExample()
+        SheetExample()
     }
 }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct actionSheetExample: View {
+struct ActionSheetExample: View {
    @State var isPresented = false
     var body: some View {
         VStack {
@@ -27,8 +27,8 @@ struct actionSheetExample: View {
     }
 }
 
-struct actionSheetExample_Previews: PreviewProvider {
+struct ActionSheetExample_Previews: PreviewProvider {
     static var previews: some View {
-        actionSheetExample()
+        ActionSheetExample()
     }
 }

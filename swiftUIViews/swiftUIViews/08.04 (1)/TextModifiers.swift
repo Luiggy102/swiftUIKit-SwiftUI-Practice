@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct textModifiers: View {
+struct TextModifiers: View {
     var body: some View {
 //        NavigationView {
-            VStack(alignment:.leading) {
+            VStack(alignment: .leading) {
                 Text("Modificadores de Texto extra")
                     .bold()
                 Text("Combinar")
@@ -45,8 +45,8 @@ struct textModifiers: View {
     }
 }
 
-struct textModifiers_Previews: PreviewProvider {
+struct TextModifiers_Previews: PreviewProvider {
     static var previews: some View {
-        textModifiers()
+        TextModifiers()
     }
 }

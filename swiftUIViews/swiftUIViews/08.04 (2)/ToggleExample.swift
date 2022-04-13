@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct toggleExample: View {
-@State var isOn:Bool = false
+struct ToggleExample: View {
+@State var isOn: Bool = false
     var body: some View {
         Form {
             Toggle("Activar Toggle", isOn: $isOn)
@@ -18,8 +18,8 @@ struct toggleExample: View {
     }
 }
 
-struct toggleExample_Previews: PreviewProvider {
+struct ToggleExample_Previews: PreviewProvider {
     static var previews: some View {
-        toggleExample()
+        ToggleExample()
     }
 }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct progressViewExample: View {
+struct ProgressViewExample: View {
     @State var isLoading: Bool = false
     // El valor máximo para las barras de cargas es `1`
     // Asi que hay que aumentarle de 0.1
@@ -26,8 +26,8 @@ struct progressViewExample: View {
     }
 }
 
-struct progressViewExample_Previews: PreviewProvider {
+struct ProgressViewExample_Previews: PreviewProvider {
     static var previews: some View {
-        progressViewExample()
+        ProgressViewExample()
     }
 }

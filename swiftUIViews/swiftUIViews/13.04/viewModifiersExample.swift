@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct viewModifiersExample: View {
+struct ViewModifiersExample: View {
     var body: some View {
         VStack {
             Text("Crear modificadores reutilizables")
@@ -39,8 +39,8 @@ struct NuevoModificadorDeBoton: ViewModifier {
     }
 }
 
-struct viewModifiersExample_Previews: PreviewProvider {
+struct ViewModifiersExample_Previews: PreviewProvider {
     static var previews: some View {
-        viewModifiersExample()
+        ViewModifiersExample()
     }
 }

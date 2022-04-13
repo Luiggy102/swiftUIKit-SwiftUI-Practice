@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct datepickerExample: View {
+struct DatepickerExample: View {
     @State var currentDate: Date = Date()
     var body: some View {
         Form {
@@ -30,8 +30,8 @@ struct datepickerExample: View {
     }
 }
 
-struct datepickerExample_Previews: PreviewProvider {
+struct DatepickerExample_Previews: PreviewProvider {
     static var previews: some View {
-        datepickerExample()
+        DatepickerExample()
     }
 }

@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct textEditorExample: View {
+struct TextEditorExample: View {
     @State var textInTextEditor: String = "Escribe algo..."
     @State var counter: Int = 0
     var body: some View {
         VStack {
-            VStack (alignment: .leading){
+            VStack(alignment: .leading) {
                 Text("Al momento de que pase 280 caractéres se pasará a rojo el número")
                 TextEditor(text: $textInTextEditor)
                     .font(.headline)
@@ -38,6 +38,6 @@ struct textEditorExample: View {
 
 struct TextEditor_Previews: PreviewProvider {
     static var previews: some View {
-        textEditorExample()
+        TextEditorExample()
     }
 }
