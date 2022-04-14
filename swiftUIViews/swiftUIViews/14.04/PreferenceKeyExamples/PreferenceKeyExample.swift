@@ -40,6 +40,7 @@ struct PreferenceKeyExample: View {
                 .padding()
             HStack {
                 NavigationLink("PreferenceKey con GeometryReader") { GeometryPreferenceKeyExample() }.padding()
+                NavigationLink("PreferenceKey con Scroll View") { ScrollViewOffsetPreferenceKeyExample() }.padding()
             }
             VistaSecundaria(texto: texto)
             // El hijo esta cambiando el padre, preference key
