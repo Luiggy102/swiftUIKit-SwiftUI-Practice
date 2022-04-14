@@ -19,6 +19,7 @@
 		847EEC1B2800CEE200403868 /* SliderExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847EEC1A2800CEE200403868 /* SliderExample.swift */; };
 		847F05BA27FF247F00175093 /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847F05B927FF247F00175093 /* Tabs.swift */; };
 		848110512804581300BB9E98 /* ListExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848110502804581300BB9E98 /* ListExample.swift */; };
+		848BDE5528085CA100427CDB /* PreferenceKeyExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848BDE5428085CA100427CDB /* PreferenceKeyExample.swift */; };
 		848CE9912805BF8600687465 /* ContextMenuExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848CE9902805BF8600687465 /* ContextMenuExample.swift */; };
 		848CE9932805C45E00687465 /* TapGestureExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848CE9922805C45E00687465 /* TapGestureExample.swift */; };
 		8490E8D82801CD0900B7A3B6 /* GridViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490E8D72801CD0900B7A3B6 /* GridViewExample.swift */; };
@@ -51,6 +52,7 @@
 		847EEC1A2800CEE200403868 /* SliderExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderExample.swift; sourceTree = "<group>"; };
 		847F05B927FF247F00175093 /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
 		848110502804581300BB9E98 /* ListExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListExample.swift; sourceTree = "<group>"; };
+		848BDE5428085CA100427CDB /* PreferenceKeyExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeyExample.swift; sourceTree = "<group>"; };
 		848CE9902805BF8600687465 /* ContextMenuExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuExample.swift; sourceTree = "<group>"; };
 		848CE9922805C45E00687465 /* TapGestureExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapGestureExample.swift; sourceTree = "<group>"; };
 		8490E8D72801CD0900B7A3B6 /* GridViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewExample.swift; sourceTree = "<group>"; };
@@ -138,6 +140,14 @@
 			path = 12.04;
 			sourceTree = "<group>";
 		};
+		848BDE5628085CAA00427CDB /* 14.04 */ = {
+			isa = PBXGroup;
+			children = (
+				848BDE5428085CA100427CDB /* PreferenceKeyExample.swift */,
+			);
+			path = 14.04;
+			sourceTree = "<group>";
+		};
 		8491B3242806194C00DB8228 /* 13.04 */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +188,7 @@
 			children = (
 				8494809A27FF165900B3D558 /* SwiftUIViewsApp.swift */,
 				8494809C27FF165900B3D558 /* ContentView.swift */,
+				848BDE5628085CAA00427CDB /* 14.04 */,
 				8491B3242806194C00DB8228 /* 13.04 */,
 				84081EA52805D88D00E1E8A0 /* 12.04 */,
 				84081EA42805D86A00E1E8A0 /* 11.04 */,
@@ -307,6 +318,7 @@
 				8429518F2807258C00628A9A /* viewModifiersExample.swift in Sources */,
 				8491E69B2807192F006221A6 /* GeometryReaderScrollView.swift in Sources */,
 				8490E8D82801CD0900B7A3B6 /* GridViewExample.swift in Sources */,
+				848BDE5528085CA100427CDB /* PreferenceKeyExample.swift in Sources */,
 				8490E8DA2801D7C900B7A3B6 /* FormExample.swift in Sources */,
 				8491B3232806194400DB8228 /* swipeActions y refreshable.swift in Sources */,
 				847EEC1B2800CEE200403868 /* SliderExample.swift in Sources */,

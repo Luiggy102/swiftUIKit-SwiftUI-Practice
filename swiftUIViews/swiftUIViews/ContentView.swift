@@ -12,6 +12,11 @@ struct ContentView: View {
         NavigationView {
             Form {
                 Section {
+                    NavigationLink("Preference keys") { PreferenceKeyExample() }
+                } header: {
+                    Text("14.04")
+                }
+                Section {
                     NavigationLink("Crear propios modificadores") { ViewModifiersExample() }
                     NavigationLink(
 """
