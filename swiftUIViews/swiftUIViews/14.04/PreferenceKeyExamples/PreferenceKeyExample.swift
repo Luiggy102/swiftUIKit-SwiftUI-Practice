@@ -6,7 +6,7 @@
 //
 
 /* Extraer valores de Vistas hijos
-  Sirve para cuando el hijo tiene valores que el padre no  */
+ Sirve para cuando el hijo tiene valores que el padre no  */
 
 import SwiftUI
 
@@ -26,24 +26,28 @@ struct TituloPersonalizadoPreferenceKey: PreferenceKey {
 // Después ya es un valor global que podemos configurar:
 
 /* 2.- Se lo configura dentro de la vista Padre que obtendra datos del hijo
-
-        .onPreferenceChange(TituloPersonalizadoPreferenceKey.self) { valorNuevo in
-            self.texto = valorNuevo
-        }
+ 
+ .onPreferenceChange(TituloPersonalizadoPreferenceKey.self) { valorNuevo in
+ self.texto = valorNuevo
+ }
  */
 
 struct PreferenceKeyExample: View {
     @State private var texto: String = "Hola Mundo"
     var body: some View {
-        NavigationView {
-            VStack {
-                VistaSecundaria(texto: texto)
-                    // El hijo esta cambiando el padre, preference key
-                    // El padre siendo NavigationView
-                    .navigationTitle("Titulo Navegación")
-//                    .tituloPersonalizado("Nuevo Valor!!")
-//                    .preference(key: TituloPersonalizadoPreferenceKey.self, value: "Nuevo Valor")
+        VStack {
+            Text("Más ejemplos reales:")
+                .padding()
+            HStack {
+                NavigationLink("PreferenceKey con GeometryReader") { GeometryPreferenceKeyExample() }.padding()
             }
+            VistaSecundaria(texto: texto)
+            // El hijo esta cambiando el padre, preference key
+            // El padre siendo NavigationView
+                .navigationTitle("Titulo Navegación")
+                .navigationBarTitleDisplayMode(.inline)
+            //                    .tituloPersonalizado("Nuevo Valor!!")
+            //                    .preference(key: TituloPersonalizadoPreferenceKey.self, value: "Nuevo Valor")
         }
         .onPreferenceChange(TituloPersonalizadoPreferenceKey.self) { valorNuevo in
             self.texto = valorNuevo
@@ -54,17 +58,17 @@ struct PreferenceKeyExample: View {
 /*
  3.- Se coloca:
  `.preference(key: TituloPersonalizadoPreferenceKey.self, value: "Nuevo Valor")`
-  Dentro de la vista hijo
+ Dentro de la vista hijo
  */
 
 struct VistaSecundaria: View {
     let texto: String
     @State private var nuevoValorBaseDeDatos: String = ""
     var body: some View {
-       Text(texto)
+        Text(texto)
             .bold()
             .onAppear(perform: traerInfoDesdeBaseDeDatos)
-//            .preference(key: TituloPersonalizadoPreferenceKey.self, value: "Nuevo Valor")
+        //            .preference(key: TituloPersonalizadoPreferenceKey.self, value: "Nuevo Valor")
             .tituloPersonalizado(nuevoValorBaseDeDatos)
     }
     func traerInfoDesdeBaseDeDatos() {
@@ -76,8 +80,8 @@ struct VistaSecundaria: View {
 
 /*
  4.- Paso extra:
-    Se puede transformar el preference key como metodo de View
-    Para que se parezca a .navigationTitle()
+ Se puede transformar el preference key como metodo de View
+ Para que se parezca a .navigationTitle()
  
  Se hace una extensión de View y se coloca el nombre que queremos poner
  con preference, repetimos lo que pasa en .preference como función
