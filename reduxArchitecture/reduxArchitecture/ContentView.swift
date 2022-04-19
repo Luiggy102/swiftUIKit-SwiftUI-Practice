@@ -17,13 +17,18 @@
 // `store` es un objeto inmutable
 // para actualizarla se usa una función `reducer`
 
-// `reducer` toma como parametro `store` para cambiar
+// en swiftUI para almacenar los contenidos de `store` se usa `state`
+// para crear el `store` se crea una clase `obserbaleObject`
+// y se le coloca los contenidos: `state` y los reducer
+
+// `reducer` toma como parametro `state` para cambiar
 // y toma como parametro `action` para saber que cambiar
 
 // `action` es un objeto que descirbre que pasa(eventos)
 // basado en la `action` el `reducer` sabrá que actualizar
 
 // pueden haber muchos `reducer`
+
 
 import SwiftUI
 
@@ -46,7 +51,7 @@ func appReducer(appState: inout AppState, action: AppAction) {
 class AppStore: ObservableObject {
     // `private(set)` solo el `setter` sea privado
     // quiere decir que solo se puede cambiar dentro de la struct
-    // afuera el `getter` es público
+    // afuera el `getter` es público, afuera se puede ver la info
     @Published private(set) var appState: AppState
     private let reducer: (inout AppState, AppAction) -> Void
     
