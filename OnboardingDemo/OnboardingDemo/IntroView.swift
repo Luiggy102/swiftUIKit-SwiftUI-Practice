@@ -48,23 +48,23 @@ final class IntroView: UIView {
     }()
     private func addSubviews() {
         // agregar un array de vistas a el método
-        [imageViewUIKit].forEach(addSubview)
+        [imageViewUIKit, textLabel].forEach(addSubview)
     }
     // sin las `constrains` no apararecerá nada
     private func configureConstraints() {
         NSLayoutConstraint.activate([
             // Para que este en el centro
-            imageViewUIKit.centerXAnchor.constraint(equalTo: centerXAnchor),
-//            imageViewUIKit.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+//            imageViewUIKit.centerXAnchor.constraint(equalTo: centerXAnchor),
+//            imageViewUIKit.centerYAnchor.constraint(equalTo: centerYAnchor),
             // para que este en el top(ignorando el safe Area)
 //            imageViewUIKit.topAnchor.constraint(equalTo: view.topAnchor),
             // para que este en el top (respetando el safe area
-            imageViewUIKit.topAnchor.constraint(
-                equalTo: layoutMarginsGuide.topAnchor
-            ),
-            textLabel.topAnchor.constraint(equalTo: imageViewUIKit.bottomAnchor, constant: -42),
-            textLabel.trailingAnchor.constraint(equalTo: trailingAnchor),
-            textLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
+//            imageViewUIKit.topAnchor.constraint(equalTo: layoutMarginsGuide.topAnchor),
+            // Image
+            imageViewUIKit.centerXAnchor.constraint(equalTo: centerXAnchor),
+            imageViewUIKit.topAnchor.constraint(equalTo: layoutMarginsGuide.topAnchor),
+           // text
+            imageViewUIKit.bottomAnchor.constraint(equalTo: textLabel.topAnchor, constant: -20),
             textLabel.centerXAnchor.constraint(equalTo: centerXAnchor)
         ])
     }
