@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B952704A2852529C001FC5DA /* UIButtonUIkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95270492852529C001FC5DA /* UIButtonUIkit.swift */; };
 		B96174ED28515BB800A47164 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96174EC28515BB800A47164 /* IntroView.swift */; };
 		B9CB4078284E57C200559982 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CB4077284E57C200559982 /* AppDelegate.swift */; };
 		B9CB407A284E57C200559982 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CB4079284E57C200559982 /* SceneDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B95270492852529C001FC5DA /* UIButtonUIkit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonUIkit.swift; sourceTree = "<group>"; };
 		B96174EC28515BB800A47164 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
 		B9CB4074284E57C200559982 /* OnboardingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnboardingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9CB4077284E57C200559982 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B952704828525282001FC5DA /* views */ = {
+			isa = PBXGroup;
+			children = (
+				B96174EC28515BB800A47164 /* IntroView.swift */,
+				B95270492852529C001FC5DA /* UIButtonUIkit.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 		B9CB406B284E57C200559982 = {
 			isa = PBXGroup;
 			children = (
@@ -58,9 +69,9 @@
 		B9CB4076284E57C200559982 /* OnboardingDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B952704828525282001FC5DA /* views */,
 				B9CB4077284E57C200559982 /* AppDelegate.swift */,
 				B9CB4079284E57C200559982 /* SceneDelegate.swift */,
-				B96174EC28515BB800A47164 /* IntroView.swift */,
 				B9CB407B284E57C200559982 /* ViewController.swift */,
 				B9CB407D284E57C200559982 /* Main.storyboard */,
 				B9CB4080284E57C300559982 /* Assets.xcassets */,
@@ -165,6 +176,7 @@
 			files = (
 				B9CB407C284E57C200559982 /* ViewController.swift in Sources */,
 				B96174ED28515BB800A47164 /* IntroView.swift in Sources */,
+				B952704A2852529C001FC5DA /* UIButtonUIkit.swift in Sources */,
 				B9CB4078284E57C200559982 /* AppDelegate.swift in Sources */,
 				B9CB407A284E57C200559982 /* SceneDelegate.swift in Sources */,
 			);

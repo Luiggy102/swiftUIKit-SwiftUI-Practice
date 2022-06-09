@@ -15,7 +15,8 @@ import UIKit
 
 class ViewController: UIViewController {
     override func loadView() {
-        self.view = IntroView()
+//        self.view = IntroView()
+        self.view = UIButtonExample()
     }
     // override es una función de la clase `UIViewController`
     // quiere decir que mi código es el que se va a escribir
