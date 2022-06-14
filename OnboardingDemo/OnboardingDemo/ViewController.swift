@@ -18,7 +18,8 @@ class ViewController: UIViewController {
 //        self.view = IntroView()
 //        self.view = UIButtonExample()
 //        self.view = UILabelDemo()
-        self.view = UIImageDemo()
+//        self.view = UIImageDemo()
+        self.view = UITableDemo()
     }
     // override es una función de la clase `UIViewController`
     // quiere decir que mi código es el que se va a escribir
