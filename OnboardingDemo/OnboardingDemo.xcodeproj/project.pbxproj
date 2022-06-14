@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B92266982857C19B00C7B2AC /* UILabelUIkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92266972857C19B00C7B2AC /* UILabelUIkit.swift */; };
+		B9428F702858F76F003A8E34 /* UIImageViewUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9428F6F2858F76F003A8E34 /* UIImageViewUIKit.swift */; };
+		B9428F722858FF01003A8E34 /* UITableVIewUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9428F712858FF01003A8E34 /* UITableVIewUIKit.swift */; };
 		B952704A2852529C001FC5DA /* UIButtonUIkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95270492852529C001FC5DA /* UIButtonUIkit.swift */; };
 		B96174ED28515BB800A47164 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96174EC28515BB800A47164 /* IntroView.swift */; };
 		B9CB4078284E57C200559982 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CB4077284E57C200559982 /* AppDelegate.swift */; };
@@ -20,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		B92266972857C19B00C7B2AC /* UILabelUIkit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelUIkit.swift; sourceTree = "<group>"; };
+		B9428F6F2858F76F003A8E34 /* UIImageViewUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewUIKit.swift; sourceTree = "<group>"; };
+		B9428F712858FF01003A8E34 /* UITableVIewUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableVIewUIKit.swift; sourceTree = "<group>"; };
 		B95270492852529C001FC5DA /* UIButtonUIkit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonUIkit.swift; sourceTree = "<group>"; };
 		B96174EC28515BB800A47164 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
 		B9CB4074284E57C200559982 /* OnboardingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnboardingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +53,8 @@
 				B96174EC28515BB800A47164 /* IntroView.swift */,
 				B95270492852529C001FC5DA /* UIButtonUIkit.swift */,
 				B92266972857C19B00C7B2AC /* UILabelUIkit.swift */,
+				B9428F6F2858F76F003A8E34 /* UIImageViewUIKit.swift */,
+				B9428F712858FF01003A8E34 /* UITableVIewUIKit.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -177,9 +183,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9428F722858FF01003A8E34 /* UITableVIewUIKit.swift in Sources */,
 				B9CB407C284E57C200559982 /* ViewController.swift in Sources */,
 				B92266982857C19B00C7B2AC /* UILabelUIkit.swift in Sources */,
 				B96174ED28515BB800A47164 /* IntroView.swift in Sources */,
+				B9428F702858F76F003A8E34 /* UIImageViewUIKit.swift in Sources */,
 				B952704A2852529C001FC5DA /* UIButtonUIkit.swift in Sources */,
 				B9CB4078284E57C200559982 /* AppDelegate.swift in Sources */,
 				B9CB407A284E57C200559982 /* SceneDelegate.swift in Sources */,
