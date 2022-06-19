@@ -15,24 +15,16 @@ struct Device {
 let house: [Device] = [
     Device(name: "Laptop", image: "laptopcomputer"),
     Device(name: "Mac Mini", image: "macmini"),
-    Device(name: "Display", image: "display.2")
+    Device(name: "Displays", image: "display.2")
 ]
+
 final class UITableDemo: UIView {
-    private let devicesTable: UITableView = {
-        let table = UITableView()
-        table.backgroundColor = UIColor.blue
-        table.translatesAutoresizingMaskIntoConstraints = false
-        return table
-    }()
     private func addSubviews() {
-        [devicesTable].forEach(addSubview)
+        [].forEach(addSubview)
     }
     private func configConstraints() {
         NSLayoutConstraint.activate([
-            devicesTable.topAnchor.constraint(equalTo: topAnchor),
-            devicesTable.trailingAnchor.constraint(equalTo: trailingAnchor),
-            devicesTable.bottomAnchor.constraint(equalTo: bottomAnchor),
-            devicesTable.leadingAnchor.constraint(equalTo: leadingAnchor)
+            //
         ])
     }
     private func setUp() { addSubviews(); configConstraints() }

@@ -53,8 +53,14 @@ final class UILabelDemo: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
+    private let label4: UILabel = {
+        let label = UILabel()
+        label.text = "label prueba"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
     private func addSubviews() {
-        [label1, label2, label3].forEach(addSubview)
+        [label1, label2, label3, label4].forEach(addSubview)
     }
     private func configureConstraints() {
         NSLayoutConstraint.activate([
@@ -70,7 +76,12 @@ final class UILabelDemo: UIView {
             label3.topAnchor.constraint(equalTo: label2.bottomAnchor, constant: 20),
             label3.centerXAnchor.constraint(equalTo: centerXAnchor),
             label3.trailingAnchor.constraint(equalTo: layoutMarginsGuide.trailingAnchor),
-            label3.leadingAnchor.constraint(equalTo: layoutMarginsGuide.leadingAnchor)
+            label3.leadingAnchor.constraint(equalTo: layoutMarginsGuide.leadingAnchor),
+            // 4
+            label4.topAnchor.constraint(equalTo: label3.bottomAnchor, constant: 20),
+            label4.centerXAnchor.constraint(equalTo: centerXAnchor),
+            label4.trailingAnchor.constraint(equalTo: layoutMarginsGuide.trailingAnchor),
+            label4.leadingAnchor.constraint(equalTo: layoutMarginsGuide.leadingAnchor)
         ])
     }
     private func setUp() { addSubviews(); configureConstraints() }
